@@ -1,0 +1,182 @@
+ <menu id="Accessories" label="Accessories">
+      <item label="Disks">
+       <action name="Execute"><execute>gnome-disks</execute></action>
+     </item>
+      <item label="Double Commander" icon="/usr/share/pixmaps/doublecmd.png">
+       <action name="Execute"><execute>doublecmd </execute></action>
+     </item>
+      <item label="FreeFileSync" icon="///opt/FreeFileSync/Resources/FreeFileSync.png">
+       <action name="Execute"><execute>"/opt/FreeFileSync/FreeFileSync" </execute></action>
+     </item>
+      <item label="Galculator" icon="/usr/share/icons/hicolor/48x48/apps/galculator.png">
+       <action name="Execute"><execute>galculator</execute></action>
+     </item>
+      <item label="KeePassXC" icon="/usr/share/icons/hicolor/256x256/apps/keepassxc.png">
+       <action name="Execute"><execute>keepassxc </execute></action>
+     </item>
+      <item label="Leafpad" icon="/usr/share/icons/hicolor/16x16/apps/leafpad.png">
+       <action name="Execute"><execute>leafpad </execute></action>
+     </item>
+      <item label="RealTimeSync" icon="///opt/FreeFileSync/Resources/RealTimeSync.png">
+       <action name="Execute"><execute>"/opt/FreeFileSync/RealTimeSync" </execute></action>
+     </item>
+      <item label="Stacer" icon="/usr/share/icons/hicolor/16x16/apps/stacer.png">
+       <action name="Execute"><execute>stacer</execute></action>
+     </item>
+      <item label="Vim" icon="/usr/share/icons/hicolor/48x48/apps/gvim.png">
+       <action name="Execute"><execute>xterm -e vim </execute></action>
+     </item>
+ </menu> <!-- Accessories -->
+ <menu id="Graphics" label="Graphics">
+      <item label="Flameshot" icon="/usr/share/icons/hicolor/48x48/apps/org.flameshot.Flameshot.png">
+       <action name="Execute"><execute>/usr/bin/flameshot</execute></action>
+     </item>
+      <item label="GNU Image Manipulation Program" icon="/usr/share/icons/hicolor/16x16/apps/gimp.png">
+       <action name="Execute"><execute>gimp-2.10 </execute></action>
+     </item>
+ </menu> <!-- Graphics -->
+ <menu id="Internet" label="Internet">
+      <item label="AnyDesk" icon="/usr/share/pixmaps/anydesk.svg">
+       <action name="Execute"><execute>/usr/bin/anydesk </execute></action>
+     </item>
+      <item label="Avahi SSH Server Browser">
+       <action name="Execute"><execute>/usr/bin/bssh</execute></action>
+     </item>
+      <item label="Avahi VNC Server Browser">
+       <action name="Execute"><execute>/usr/bin/bvnc</execute></action>
+     </item>
+      <item label="Brave" icon="/usr/share/icons/hicolor/16x16/apps/brave-desktop.png">
+       <action name="Execute"><execute>brave </execute></action>
+     </item>
+      <item label="Google Chrome" icon="/usr/share/icons/hicolor/16x16/apps/google-chrome.png">
+       <action name="Execute"><execute>/usr/bin/google-chrome-stable </execute></action>
+     </item>
+      <item label="MEGAsync" icon="/usr/share/icons/hicolor/16x16/apps/mega.png">
+       <action name="Execute"><execute>megasync</execute></action>
+     </item>
+      <item label="Nyxt" icon="/usr/share/icons/hicolor/16x16/apps/nyxt.png">
+       <action name="Execute"><execute>nyxt </execute></action>
+     </item>
+      <item label="Signal" icon="/usr/share/icons/hicolor/16x16/apps/signal-desktop.png">
+       <action name="Execute"><execute>signal-desktop -- </execute></action>
+     </item>
+      <item label="Skype" icon="/usr/share/icons/hicolor/16x16/apps/skypeforlinux.png">
+       <action name="Execute"><execute>/usr/bin/skypeforlinux </execute></action>
+     </item>
+      <item label="Telegram Desktop" icon="/usr/share/icons/hicolor/16x16/apps/telegram.png">
+       <action name="Execute"><execute>telegram-desktop -- </execute></action>
+     </item>
+      <item label="Viber" icon="/usr/share/icons/hicolor/16x16/apps/viber.png">
+       <action name="Execute"><execute>viber </execute></action>
+     </item>
+      <item label="WhatsApp" icon="/usr/share/icons/hicolor/16x16/apps/whatsapp-nativefier.png">
+       <action name="Execute"><execute>whatsapp-nativefier</execute></action>
+     </item>
+      <item label="pCloud" icon="/usr/share/icons/hicolor/16x16/apps/pcloud.png">
+       <action name="Execute"><execute>env DESKTOPINTEGRATION=false /usr/bin/pcloud</execute></action>
+     </item>
+ </menu> <!-- Internet -->
+ <menu id="Office" label="Office">
+      <item label="FreeOffice PlanMaker" icon="/usr/share/icons/hicolor/16x16/apps/freeoffice-planmaker.png">
+       <action name="Execute"><execute>freeoffice-planmaker </execute></action>
+     </item>
+      <item label="FreeOffice Presentations" icon="/usr/share/icons/hicolor/16x16/apps/freeoffice-presentations.png">
+       <action name="Execute"><execute>freeoffice-presentations </execute></action>
+     </item>
+      <item label="FreeOffice TextMaker" icon="/usr/share/icons/hicolor/16x16/apps/freeoffice-textmaker.png">
+       <action name="Execute"><execute>freeoffice-textmaker </execute></action>
+     </item>
+      <item label="Master PDF Editor" icon="///opt/master-pdf-editor-4/masterpdfeditor4.png">
+       <action name="Execute"><execute>/opt/master-pdf-editor-4/masterpdfeditor4 </execute></action>
+     </item>
+      <item label="Xpdf" icon="/usr/share/pixmaps/xpdf.svg">
+       <action name="Execute"><execute>xpdf </execute></action>
+     </item>
+ </menu> <!-- Office -->
+ <menu id="Programming" label="Programming">
+      <item label="Geany" icon="/usr/share/icons/hicolor/16x16/apps/geany.png">
+       <action name="Execute"><execute>geany </execute></action>
+     </item>
+      <item label="Qt Assistant" icon="/usr/share/icons/hicolor/32x32/apps/assistant.png">
+       <action name="Execute"><execute>assistant</execute></action>
+     </item>
+      <item label="Qt Designer" icon="/usr/share/icons/hicolor/128x128/apps/QtProject-designer.png">
+       <action name="Execute"><execute>designer </execute></action>
+     </item>
+      <item label="Qt Linguist" icon="/usr/share/icons/hicolor/16x16/apps/linguist.png">
+       <action name="Execute"><execute>linguist </execute></action>
+     </item>
+      <item label="Qt QDBusViewer " icon="/usr/share/icons/hicolor/32x32/apps/qdbusviewer.png">
+       <action name="Execute"><execute>qdbusviewer</execute></action>
+     </item>
+ </menu> <!-- Programming -->
+ <menu id="Sound &amp; Video" label="Sound &amp; Video">
+      <item label="Audacity" icon="/usr/share/icons/hicolor/16x16/apps/audacity.png">
+       <action name="Execute"><execute>env UBUNTU_MENUPROXY=0 audacity </execute></action>
+     </item>
+      <item label="PulseAudio System Tray" icon="/usr/share/pixmaps/pasystray.png">
+       <action name="Execute"><execute>pasystray</execute></action>
+     </item>
+      <item label="PulseAudio Volume Control">
+       <action name="Execute"><execute>pavucontrol</execute></action>
+     </item>
+      <item label="Qt V4L2 test Utility" icon="/usr/share/icons/hicolor/16x16/apps/qv4l2.png">
+       <action name="Execute"><execute>qv4l2</execute></action>
+     </item>
+      <item label="Qt V4L2 video capture utility" icon="/usr/share/icons/hicolor/16x16/apps/qvidcap.png">
+       <action name="Execute"><execute>qvidcap</execute></action>
+     </item>
+ </menu> <!-- Sound & Video -->
+ <menu id="System Tools" label="System Tools">
+      <item label="Avahi Zeroconf Browser">
+       <action name="Execute"><execute>/usr/bin/avahi-discover</execute></action>
+     </item>
+      <item label="Bulk Rename" icon="/usr/share/icons/hicolor/16x16/apps/org.xfce.thunar.png">
+       <action name="Execute"><execute>thunar --bulk-rename </execute></action>
+     </item>
+      <item label="File Manager PCManFM">
+       <action name="Execute"><execute>pcmanfm </execute></action>
+     </item>
+      <item label="GParted" icon="/usr/share/icons/hicolor/16x16/apps/gparted.png">
+       <action name="Execute"><execute>/usr/bin/gparted </execute></action>
+     </item>
+      <item label="Hardware Locality lstopo">
+       <action name="Execute"><execute>lstopo</execute></action>
+     </item>
+      <item label="Htop" icon="/usr/share/pixmaps/htop.png">
+       <action name="Execute"><execute>xterm -e htop</execute></action>
+     </item>
+      <item label="LSHW" icon="///usr/share/lshw/artwork/logo.svg">
+       <action name="Execute"><execute>/usr/sbin/gtk-lshw</execute></action>
+     </item>
+      <item label="LXTerminal" icon="/usr/share/icons/hicolor/128x128/apps/lxterminal.png">
+       <action name="Execute"><execute>lxterminal</execute></action>
+     </item>
+      <item label="MEGAsync" icon="/usr/share/icons/hicolor/16x16/apps/mega.png">
+       <action name="Execute"><execute>megasync</execute></action>
+     </item>
+      <item label="Manage Printing" icon="/usr/share/icons/hicolor/16x16/apps/cups.png">
+       <action name="Execute"><execute>/usr/bin/xdg-open http://localhost:631/</execute></action>
+     </item>
+      <item label="Psensor" icon="/usr/share/icons/hicolor/16x16/apps/psensor.png">
+       <action name="Execute"><execute>psensor</execute></action>
+     </item>
+      <item label="System Profiler and Benchmark" icon="/usr/share/icons/hicolor/48x48/apps/hardinfo.png">
+       <action name="Execute"><execute>/usr/bin/hardinfo</execute></action>
+     </item>
+      <item label="Task Manager">
+       <action name="Execute"><execute>lxtask</execute></action>
+     </item>
+      <item label="Thunar File Manager" icon="/usr/share/icons/hicolor/16x16/apps/org.xfce.thunar.png">
+       <action name="Execute"><execute>thunar </execute></action>
+     </item>
+      <item label="Tint2">
+       <action name="Execute"><execute>tint2</execute></action>
+     </item>
+      <item label="UXTerm" icon="/usr/share/pixmaps/xterm-color_48x48.xpm">
+       <action name="Execute"><execute>uxterm</execute></action>
+     </item>
+      <item label="XTerm" icon="/usr/share/pixmaps/xterm-color_48x48.xpm">
+       <action name="Execute"><execute>xterm</execute></action>
+     </item>
+ </menu> <!-- System Tools -->
