@@ -7,21 +7,21 @@ checkfile=/home/ed/scripts/external_func.sh
 function githubupdate() {
 # GIT ADD
 summctrl=0
-/usr/bin/git --git-dir=$HOME/.git/tools/ --work-tree=$HOME/Clouds/Dropbox/BackUps/Linux/tools/ add .
+/usr/bin/git --git-dir=$HOME/.git/tools/ --work-tree=$HOME/Clouds/Dropbox/BackUps/Linux/ add .
 exitcode=$?
 exitcontrol
 codedescription1=$codedescription
 exitcode1=$exitcode
 summctrl=$(expr $summctrl + $exitcode1)
 # GIT COMMIT
-/usr/bin/git --git-dir=$HOME/.git/tools/ --work-tree=$HOME/Clouds/Dropbox/BackUps/Linux/tools/ commit -m "Regular Update"
+/usr/bin/git --git-dir=$HOME/.git/tools/ --work-tree=$HOME/Clouds/Dropbox/BackUps/Linux/ commit -m "Regular Update"
 exitcode=$?
 exitcontrol
 codedescription2=$codedescription
 exitcode2=$exitcode
 summctrl=$(expr $summctrl + $exitcode2)
 # GIT PUSH
-/usr/bin/git --git-dir=$HOME/.git/tools/ --work-tree=$HOME/Clouds/Dropbox/BackUps/Linux/tools/ push -u
+/usr/bin/git --git-dir=$HOME/.git/tools/ --work-tree=$HOME/Clouds/Dropbox/BackUps/Linux/ push -u
 exitcode=$?
 exitcontrol
 codedescription3=$codedescription

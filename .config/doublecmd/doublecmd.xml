@@ -264,8 +264,8 @@
   </Toolbars>
   <MainWindow>
     <Position Save="True">
-      <Left>127</Left>
-      <Top>111</Top>
+      <Left>108</Left>
+      <Top>79</Top>
       <Width>1061</Width>
       <Height>560</Height>
       <PixelsPerInch>96</PixelsPerInch>
@@ -406,7 +406,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/</Path>
+                  <Path>/home/ed/Clouds/Dropbox/BackUps/Linux/install/</Path>
                 </Paths>
               </Entry>
             </History>
