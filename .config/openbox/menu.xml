@@ -327,9 +327,6 @@
 				<item label="Github-tools update" icon=".local/share/icons/apps/gitlab.svg">
 					<action name="Execute"><execute>~/bin/github_tools.sh </execute></action>
 				</item>
-				<item label="Github-install update" icon=".local/share/icons/apps/github.svg">
-					<action name="Execute"><execute>~/bin/github_install.sh </execute></action>
-				</item>
 			</menu> <!-- the end of Clouds -->
 			
 			<!-- rootmenu / Internet / Messengers -->		

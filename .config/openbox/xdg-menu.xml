@@ -5,9 +5,6 @@
       <item label="Double Commander" icon="/usr/share/pixmaps/doublecmd.png">
        <action name="Execute"><execute>doublecmd </execute></action>
      </item>
-      <item label="FreeFileSync" icon="///opt/FreeFileSync/Resources/FreeFileSync.png">
-       <action name="Execute"><execute>"/opt/FreeFileSync/FreeFileSync" </execute></action>
-     </item>
       <item label="Galculator" icon="/usr/share/icons/hicolor/48x48/apps/galculator.png">
        <action name="Execute"><execute>galculator</execute></action>
      </item>
@@ -17,12 +14,6 @@
       <item label="Leafpad" icon="/usr/share/icons/hicolor/16x16/apps/leafpad.png">
        <action name="Execute"><execute>leafpad </execute></action>
      </item>
-      <item label="RealTimeSync" icon="///opt/FreeFileSync/Resources/RealTimeSync.png">
-       <action name="Execute"><execute>"/opt/FreeFileSync/RealTimeSync" </execute></action>
-     </item>
-      <item label="Stacer" icon="/usr/share/icons/hicolor/16x16/apps/stacer.png">
-       <action name="Execute"><execute>stacer</execute></action>
-     </item>
       <item label="Vim" icon="/usr/share/icons/hicolor/48x48/apps/gvim.png">
        <action name="Execute"><execute>xterm -e vim </execute></action>
      </item>
@@ -30,9 +21,6 @@
  <menu id="Graphics" label="Graphics">
       <item label="Flameshot" icon="/usr/share/icons/hicolor/48x48/apps/org.flameshot.Flameshot.png">
        <action name="Execute"><execute>/usr/bin/flameshot</execute></action>
-     </item>
-      <item label="GNU Image Manipulation Program" icon="/usr/share/icons/hicolor/16x16/apps/gimp.png">
-       <action name="Execute"><execute>gimp-2.10 </execute></action>
      </item>
  </menu> <!-- Graphics -->
  <menu id="Internet" label="Internet">
@@ -47,9 +35,6 @@
      </item>
       <item label="Brave" icon="/usr/share/icons/hicolor/16x16/apps/brave-desktop.png">
        <action name="Execute"><execute>brave </execute></action>
-     </item>
-      <item label="Google Chrome" icon="/usr/share/icons/hicolor/16x16/apps/google-chrome.png">
-       <action name="Execute"><execute>/usr/bin/google-chrome-stable </execute></action>
      </item>
       <item label="MEGAsync" icon="/usr/share/icons/hicolor/16x16/apps/mega.png">
        <action name="Execute"><execute>megasync</execute></action>
@@ -71,6 +56,9 @@
      </item>
       <item label="WhatsApp" icon="/usr/share/icons/hicolor/16x16/apps/whatsapp-nativefier.png">
        <action name="Execute"><execute>whatsapp-nativefier</execute></action>
+     </item>
+      <item label="Wireshark" icon="/usr/share/icons/hicolor/16x16/apps/wireshark.png">
+       <action name="Execute"><execute>wireshark </execute></action>
      </item>
       <item label="pCloud" icon="/usr/share/icons/hicolor/16x16/apps/pcloud.png">
        <action name="Execute"><execute>env DESKTOPINTEGRATION=false /usr/bin/pcloud</execute></action>
@@ -131,9 +119,6 @@
       <item label="Avahi Zeroconf Browser">
        <action name="Execute"><execute>/usr/bin/avahi-discover</execute></action>
      </item>
-      <item label="Bulk Rename" icon="/usr/share/icons/hicolor/16x16/apps/org.xfce.thunar.png">
-       <action name="Execute"><execute>thunar --bulk-rename </execute></action>
-     </item>
       <item label="File Manager PCManFM">
        <action name="Execute"><execute>pcmanfm </execute></action>
      </item>
@@ -155,9 +140,6 @@
       <item label="MEGAsync" icon="/usr/share/icons/hicolor/16x16/apps/mega.png">
        <action name="Execute"><execute>megasync</execute></action>
      </item>
-      <item label="Manage Printing" icon="/usr/share/icons/hicolor/16x16/apps/cups.png">
-       <action name="Execute"><execute>/usr/bin/xdg-open http://localhost:631/</execute></action>
-     </item>
       <item label="Psensor" icon="/usr/share/icons/hicolor/16x16/apps/psensor.png">
        <action name="Execute"><execute>psensor</execute></action>
      </item>
@@ -167,9 +149,6 @@
       <item label="Task Manager">
        <action name="Execute"><execute>lxtask</execute></action>
      </item>
-      <item label="Thunar File Manager" icon="/usr/share/icons/hicolor/16x16/apps/org.xfce.thunar.png">
-       <action name="Execute"><execute>thunar </execute></action>
-     </item>
       <item label="Tint2">
        <action name="Execute"><execute>tint2</execute></action>
      </item>
@@ -178,5 +157,8 @@
      </item>
       <item label="XTerm" icon="/usr/share/pixmaps/xterm-color_48x48.xpm">
        <action name="Execute"><execute>xterm</execute></action>
+     </item>
+      <item label="conky">
+       <action name="Execute"><execute>conky --daemonize --pause=1</execute></action>
      </item>
  </menu> <!-- System Tools -->

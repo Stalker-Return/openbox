@@ -67,6 +67,7 @@ alias ls='exa -al --color=always --group-directories-first' # my preferred listi
 alias cat='highlight --out-format=ansi'
 alias sup='sudo pacman'
 alias mv='mv -i'
+alias cdd='cd ~/Downloads/'
 alias cp='cp -i'
 alias ln='ln -i'
 alias ..='cd ..'
