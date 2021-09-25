@@ -5,6 +5,9 @@
       <item label="Double Commander" icon="/usr/share/pixmaps/doublecmd.png">
        <action name="Execute"><execute>doublecmd </execute></action>
      </item>
+      <item label="FreeFileSync" icon="///opt/FreeFileSync/Resources/FreeFileSync.png">
+       <action name="Execute"><execute>"/opt/FreeFileSync/FreeFileSync" </execute></action>
+     </item>
       <item label="Galculator" icon="/usr/share/icons/hicolor/48x48/apps/galculator.png">
        <action name="Execute"><execute>galculator</execute></action>
      </item>
@@ -14,13 +17,24 @@
       <item label="Leafpad" icon="/usr/share/icons/hicolor/16x16/apps/leafpad.png">
        <action name="Execute"><execute>leafpad </execute></action>
      </item>
+      <item label="RealTimeSync" icon="///opt/FreeFileSync/Resources/RealTimeSync.png">
+       <action name="Execute"><execute>"/opt/FreeFileSync/RealTimeSync" </execute></action>
+     </item>
       <item label="Vim" icon="/usr/share/icons/hicolor/48x48/apps/gvim.png">
        <action name="Execute"><execute>xterm -e vim </execute></action>
      </item>
  </menu> <!-- Accessories -->
+ <menu id="Education" label="Education">
+      <item label="LibreOffice Math" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-math.png">
+       <action name="Execute"><execute>libreoffice --math </execute></action>
+     </item>
+ </menu> <!-- Education -->
  <menu id="Graphics" label="Graphics">
       <item label="Flameshot" icon="/usr/share/icons/hicolor/48x48/apps/org.flameshot.Flameshot.png">
        <action name="Execute"><execute>/usr/bin/flameshot</execute></action>
+     </item>
+      <item label="LibreOffice Draw" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-draw.png">
+       <action name="Execute"><execute>libreoffice --draw </execute></action>
      </item>
  </menu> <!-- Graphics -->
  <menu id="Internet" label="Internet">
@@ -36,6 +50,9 @@
       <item label="Brave" icon="/usr/share/icons/hicolor/16x16/apps/brave-desktop.png">
        <action name="Execute"><execute>brave </execute></action>
      </item>
+      <item label="Firefox" icon="/usr/share/icons/hicolor/16x16/apps/firefox.png">
+       <action name="Execute"><execute>/usr/lib/firefox/firefox </execute></action>
+     </item>
       <item label="MEGAsync" icon="/usr/share/icons/hicolor/16x16/apps/mega.png">
        <action name="Execute"><execute>megasync</execute></action>
      </item>
@@ -50,6 +67,9 @@
      </item>
       <item label="Telegram Desktop" icon="/usr/share/icons/hicolor/16x16/apps/telegram.png">
        <action name="Execute"><execute>telegram-desktop -- </execute></action>
+     </item>
+      <item label="Tor Browser (en-US)" icon="/usr/share/icons/hicolor/128x128/apps/tor-browser.png">
+       <action name="Execute"><execute>/usr/bin/tor-browser </execute></action>
      </item>
       <item label="Viber" icon="/usr/share/icons/hicolor/16x16/apps/viber.png">
        <action name="Execute"><execute>viber </execute></action>
@@ -73,6 +93,27 @@
      </item>
       <item label="FreeOffice TextMaker" icon="/usr/share/icons/hicolor/16x16/apps/freeoffice-textmaker.png">
        <action name="Execute"><execute>freeoffice-textmaker </execute></action>
+     </item>
+      <item label="LibreOffice" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-startcenter.png">
+       <action name="Execute"><execute>libreoffice </execute></action>
+     </item>
+      <item label="LibreOffice Base" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-base.png">
+       <action name="Execute"><execute>libreoffice --base </execute></action>
+     </item>
+      <item label="LibreOffice Calc" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-calc.png">
+       <action name="Execute"><execute>libreoffice --calc </execute></action>
+     </item>
+      <item label="LibreOffice Draw" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-draw.png">
+       <action name="Execute"><execute>libreoffice --draw </execute></action>
+     </item>
+      <item label="LibreOffice Impress" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-impress.png">
+       <action name="Execute"><execute>libreoffice --impress </execute></action>
+     </item>
+      <item label="LibreOffice Math" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-math.png">
+       <action name="Execute"><execute>libreoffice --math </execute></action>
+     </item>
+      <item label="LibreOffice Writer" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-writer.png">
+       <action name="Execute"><execute>libreoffice --writer </execute></action>
      </item>
       <item label="Master PDF Editor" icon="///opt/master-pdf-editor-4/masterpdfeditor4.png">
        <action name="Execute"><execute>/opt/master-pdf-editor-4/masterpdfeditor4 </execute></action>

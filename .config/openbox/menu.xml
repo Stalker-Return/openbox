@@ -276,8 +276,8 @@
 			<item label="FreeOffice Present" icon=".local/share/icons/devices/freeoffice-presentations.svg">
 				<action name="Execute"><execute>freeoffice-presentations </execute></action>
 			</item>
-			<!-- temporary uninstalled LibreOffice
-			<separator/>
+
+			<separator/> <!-- LibreOffice suit  -->
 			<item label="LibreOffice" icon=".local/share/icons/apps/libreoffice-main.svg">
 				<action name="Execute"><execute>libreoffice </execute></action>
 			</item>
@@ -299,7 +299,7 @@
 			<item label="LibreOffice Draw" icon=".local/share/icons/apps/libreoffice-draw.svg">
 				<action name="Execute"><execute>libreoffice --draw </execute></action>
 			</item>
-			 -->
+			
 			</menu> <!-- the end of Office -->
 
 		<!-- rootmenu / Internet -->			
@@ -375,7 +375,7 @@
 				<action name="Execute"><execute>nyxt </execute></action>
 			</item>
 			<item label="Tor Browser" icon=".local/share/icons/apps/tor.svg">
-				<action name="Execute"><execute>sh -c '"/home/ed/portable/tor-browser_en-US/Browser/start-tor-browser" --detach || ([ !  -x "/home/ed/portable/tor-browser_en-US/Browser/start-tor-browser" ] && "$(dirname "$*")"/Browser/start-tor-browser --detach)' dummy %k </execute></action>
+				<action name="Execute"><execute>/usr/bin/tor-browser %u </execute></action>
 			</item>
 			<item label="The Weather" icon=".local/share/icons/panel/weather-few-clouds.svg">
 				<action name="Execute"><execute>xterm -bg blue4 -fg white -T Wheather -geometry 128x50+1+1 -e 'tput civis; sh ~/scripts/tint2/bar_weather.sh -f menu' </execute></action>
@@ -436,7 +436,7 @@
 				<action name="Execute"><execute>galculator </execute></action>
 			</item>
 			<item label="ViFM" icon=".local/share/icons/apps/vifm.svg">
-				<action name="Execute"><execute>lxterminal -e vifm </execute></action>
+				<action name="Execute"><execute>xterm -e vifm </execute></action>
 			</item>
 		</menu> <!-- the end of Applications -->
 
@@ -495,10 +495,10 @@
 				<action name="Execute"><execute>sh ~/scripts/show_mirrors.sh </execute></action>
 			</item>
 			<item label="wireless network devices" icon=".local/share/icons/devices/network-wireless-hotspot.svg">
-				<action name="Execute"><execute>lxterminal -e wavemon </execute></action>
+				<action name="Execute"><execute>xterm -bg blue -fg black -T Devices_Monitor -geometry 85x30+390+150 -e wavemon </execute></action>
 			</item>
 			<item label="pstree" icon=".local/share/icons/apps/mlgui.svg">
-				<action name="Execute"><execute>lxterminal -e /usr/bin/pstree.x11</execute></action>
+				<action name="Execute"><execute>xterm -e /usr/bin/pstree.x11</execute></action>
 			</item>
 		</menu> <!-- the end of Sys Info -->
 		
@@ -531,6 +531,9 @@
 			<item label="PowerKit Configuration" icon=".local/share/icons/devices/battery.svg">
 				<action name="Execute"><execute>powerkit --config </execute></action>
 			</item>
+			<item label="Audacity" icon=".local/share/icons/apps/audacity.svg">
+				<action name="Execute"><execute>env UBUNTU_MENUPROXY=0 audacity </execute></action>
+			</item>
 			<item label="Task Manager" icon=".local/share/icons/apps/applications-utilities.svg">
 				<action name="Execute"><execute>lxtask</execute></action>
 			</item>
@@ -539,12 +542,6 @@
 			</item>
 			<item label="LXTerminal" icon=".local/share/icons/apps/utilities-terminal.svg">
 				<action name="Execute"><execute>lxterminal</execute></action>
-			</item>
-			<item label="Nano" icon=".local/share/icons/apps/google-slides.svg">
-				<action name="Execute"><execute>lxterminal -e nano</execute></action>
-			</item>
-			<item label="Vim" icon=".local/share/icons/apps/vim.svg">
-				<action name="Execute"><execute>lxterminal -e vim %F</execute></action>
 			</item>
 			<item label="System Maintenance" icon=".local/share/icons/apps/system-software-update.svg">
 				<action name="Execute"><execute>lxterminal --geometry=90x26 --title=Maintanance -e sudo sh ~/scripts/wtf.sh </execute></action>

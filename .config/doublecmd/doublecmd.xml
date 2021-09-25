@@ -340,7 +340,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/</Path>
+                  <Path>/home/ed/Downloads/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -406,7 +406,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/Clouds/Dropbox/BackUps/Linux/install/</Path>
+                  <Path>/home/ed/</Path>
                 </Paths>
               </Entry>
             </History>
