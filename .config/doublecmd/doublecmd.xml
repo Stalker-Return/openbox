@@ -340,7 +340,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/run/media/ed/TOSHIBA EXT/Storage/Linux/</Path>
+                  <Path>/home/ed/gdrive/Tools/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -406,7 +406,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/</Path>
+                  <Path>/home/ed/Clouds/gDrive/Tools/</Path>
                 </Paths>
               </Entry>
             </History>
