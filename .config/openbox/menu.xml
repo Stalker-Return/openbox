@@ -497,12 +497,15 @@
 			<item label="wireless network devices" icon=".local/share/icons/devices/network-wireless-hotspot.svg">
 				<action name="Execute"><execute>xterm -bg blue -fg black -T Devices_Monitor -geometry 85x30+390+150 -e wavemon </execute></action>
 			</item>
+			<item label="nyx" icon=".local/share/icons/devices/network-wireless-hotspot.svg">
+				<action name="Execute"><execute>xterm -bg black -fg white -T NYX -geometry 88x22+833+1 -e nyx </execute></action>
+			</item>
 			<item label="pstree" icon=".local/share/icons/apps/mlgui.svg">
 				<action name="Execute"><execute>xterm -e /usr/bin/pstree.x11</execute></action>
 			</item>
-		</menu> <!-- the end of Sys Info -->
+		</menu> <!-- the end of System -->
 		
-		<!-- rootmenu / System -->
+		<!-- rootmenu / Tools -->
 		<menu id="system-tools-menu" label="Tools" icon=".local/share/icons/places/folder-blue-code.svg">
 
 			<!-- rootmenu / System / Conky-->
@@ -567,7 +570,7 @@
 			<item label="xterm" icon=".local/share/icons/apps/utilities-terminal.svg">
 				<action name="Execute"><execute>xterm</execute></action>
 			</item>
-		</menu> <!-- the end of System -->
+		</menu> <!-- the end of Tools -->
 
 		<!-- rootmenu Settings-->
 		<menu id="system-settings-menu" label="Settings" icon=".local/share/icons/places/folder-blue-important.svg">

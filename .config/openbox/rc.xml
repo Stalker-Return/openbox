@@ -325,7 +325,7 @@
     <!-- Run wtf-script -->
     <keybind key="W-f">
       <action name="Execute">
-        <command>xterm -bg blue4 -fg snow -T Maintance -geometry 90x28+450+100 -e sudo sh ~/scripts/wtf.sh </command>
+        <command>xterm -bg gray15 -fg snow -T Maintance -geometry 90x28+30+20 -e sudo sh ~/scripts/wtf.sh </command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>wtf-scriptf</name>

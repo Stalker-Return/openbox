@@ -63,9 +63,6 @@ $alignr${color} Openbox Arch Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {
 ${alignr}${color2}${font Cantarell:size=9}${alignr}kernel ${color}${kernel}
 ${alignr}${color2}${font Cantarell:size=9}${alignr}filesystem ${color}${fs_type}
 ${voffset 10}${alignr}${color} packages installed: ${color2}${execi 10000 pacman -Q | wc -l}
-${alignr}${color} available updates ${color FF0000}${font Cantarell:size=9}${execpi 600000 checkupdates | wc -l}${font}${color}	
-${alignr}${color} Wi-Fi connection: ${color 0000FF}${execpi 300000 iw dev | grep ssid | awk '{print " " $2}'}${font}${color}
-${alignr}${color} WAN IP address: ${color 0000FF}${execpi 300000 curl -s http://myip.enix.org/REMOTE_ADDR}${font}${color}
-${alignr}${color} CPU (t)emperature: ${color FF0000}${execpi 1000 sensors acpitz-acpi-0 | grep "temp1:" | awk '{print $2}'}${font}${color}
+${alignr}${color} available updates ${color CC2A2E}${font Cantarell:bold:size=10}${execpi 10800 checkupdates | wc -l}${font}${color}
 ${alignr}${color} last updated on: ${font Cantarell:size=8}${color2}${execi 10000 grep "starting full system upgrade" /var/log/pacman.log | tail -n1| cut --bytes=2-17}
 ]]

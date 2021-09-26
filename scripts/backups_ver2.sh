@@ -20,6 +20,7 @@ rsync -ar --delete /home/ed/.xprofile "/run/media/ed/TOSHIBA EXT/Storage/Linux"
 rsync -ar --delete /home/ed/.xinitrc "/run/media/ed/TOSHIBA EXT/Storage/Linux"
 rsync -ar --delete /home/ed/.fehbg "/run/media/ed/TOSHIBA EXT/Storage/Linux"
 rsync -ar --delete /home/ed/.setbg "/run/media/ed/TOSHIBA EXT/Storage/Linux"
+rsync -ar --delete /home/ed/.Xresources "/run/media/ed/TOSHIBA EXT/Storage/Linux"
 rsync -ar --delete /home/ed/README.md "/run/media/ed/TOSHIBA EXT/Storage/Linux"
 }
 echo -ne "Backup in progress... "

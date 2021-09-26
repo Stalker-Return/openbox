@@ -340,7 +340,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/Downloads/</Path>
+                  <Path>/run/media/ed/TOSHIBA EXT/Storage/Linux/</Path>
                 </Paths>
               </Entry>
             </History>
