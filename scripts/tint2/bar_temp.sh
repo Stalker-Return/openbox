@@ -12,7 +12,7 @@ temptint2 () {
 			elif [ "$TEMPVALUE" -gt 80 ];
 				then
 					if [ "$TEMPVALUE" -gt 87 ];
-						then TEMPICON="\U0001F6A9" && notify-send -u critical -t 3000 \
+						then TEMPICON="🔥" && notify-send -u critical -t 3000 \
 						"The temperature is '$(sensors acpitz-acpi-0 | grep "temp1:" | awk '{print $2}')'" \
 						"It's time to calm down" \
 						-i /home/ed/.local/share/icons/status/sensors-temperature-symbolic.svg

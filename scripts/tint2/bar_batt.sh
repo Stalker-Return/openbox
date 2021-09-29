@@ -32,9 +32,9 @@ titn_battery () {
 	STATUS=$(cat /sys/class/power_supply/BAT1/status)
 	
 		case $STATUS in
-			"Charging") 	BATICON="" ;;
-			"Unknown")		BATICON="" ;;
-			"Full")			BATICON="" ;;			
+			"Charging") 	BATICON="⚡️" ;;
+			"Unknown")		BATICON="⚡️" ;;
+			"Full")			BATICON="⚡️" ;;			
 			"Discharging")	if [ "$CHARGE" -eq 0 ]; then BATICON=""
 							  elif [ "$CHARGE" -gt 0 ] && [ "$CHARGE" -le 30 ];	then BATICON=""
 							  elif [ "$CHARGE" -gt 30 ] && [ "$CHARGE" -le 60 ]; then BATICON=""

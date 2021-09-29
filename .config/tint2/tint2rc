@@ -363,10 +363,10 @@ separator_padding = 0 2
 #-------------------------------------
 # Executor 1
 execp = new
-execp_command = echo -e "$(top -bn1 | grep Cpu | awk '{print " "$2}')%"
+execp_command = echo /usr/share/icons/Papirus/16x16/panel/indicator-cpufreq-50.svg; echo -e "$(top -bn1 | grep Cpu | awk '{print " "$2}')%"
 execp_interval = 3
-execp_has_icon = 0
-execp_cache_icon = 0
+execp_has_icon = 1
+execp_cache_icon = 1
 execp_continuous = 0
 execp_markup = 1
 execp_monitor = all
@@ -387,10 +387,10 @@ execp_icon_h = 0
 #-------------------------------------
 # Executor 2
 execp = new
-execp_command = echo -e "$(free -h | awk '/^Mem:/{print" "$3}')"
+execp_command = echo /usr/share/icons/Papirus/16x16/panel/tvconnected.svg; echo -e "$(free -h | awk '/^Mem:/{print" "$3}')"
 execp_interval = 4
-execp_has_icon = 0
-execp_cache_icon = 0
+execp_has_icon = 1
+execp_cache_icon = 1
 execp_continuous = 0
 execp_markup = 1
 execp_monitor = all
@@ -435,10 +435,10 @@ execp_icon_h = 0
 #-------------------------------------
 # Executor 4
 execp = new
-execp_command = echo -e " $(checkupdates | wc -l)"
+execp_command = echo /usr/share/icons/Papirus/16x16/panel/update-high.svg; echo -e " $(checkupdates | wc -l)"
 execp_interval = 3600
-execp_has_icon = 0
-execp_cache_icon = 0
+execp_cache_icon = 1
+execp_has_icon = 1
 execp_continuous = 0
 execp_markup = 1
 execp_monitor = all
@@ -449,7 +449,7 @@ execp_mclick_command =
 execp_uwheel_command = 
 execp_dwheel_command = 
 execp_font = sans 8
-execp_font_color = #00ff00 100
+execp_font_color = #e93c59 100
 execp_padding = 0 0
 execp_background_id = 1
 execp_centered = 0
@@ -483,7 +483,7 @@ execp_icon_h = 0
 #-------------------------------------
 # Executor 6
 execp = new
-execp_command = CHARGE=$(cat /sys/class/power_supply/BAT1/capacity); STATUS=$(cat /sys/class/power_supply/BAT1/status); case $STATUS in "Charging" | "Unknown" | "Full" ) BATICON="" ;; "Discharging") if [ "$CHARGE" -eq 0 ]; then BATICON=""; elif [ "$CHARGE" -gt 0 ] && [ "$CHARGE" -le 30 ]; then BATICON=""; elif [ "$CHARGE" -gt 30 ] && [ "$CHARGE" -le 60 ]; then BATICON=""; elif [ "$CHARGE" -gt 60 ] && [ "$CHARGE" -le 90 ]; then BATICON=""; else BATICON=""; fi;; *) BATICON="N/A";; esac; echo -e "$BATICON $CHARGE%"
+execp_command = CHARGE=$(cat /sys/class/power_supply/BAT1/capacity); STATUS=$(cat /sys/class/power_supply/BAT1/status); case $STATUS in "Charging" | "Unknown" | "Full" ) BATICON="⚡️" ;; "Discharging") if [ "$CHARGE" -eq 0 ]; then BATICON=""; elif [ "$CHARGE" -gt 0 ] && [ "$CHARGE" -le 30 ]; then BATICON=""; elif [ "$CHARGE" -gt 30 ] && [ "$CHARGE" -le 60 ]; then BATICON=""; elif [ "$CHARGE" -gt 60 ] && [ "$CHARGE" -le 90 ]; then BATICON=""; else BATICON="🔋"; fi;; *) BATICON="N/A";; esac; echo -e "$BATICON $CHARGE%"
 execp_interval = 30
 execp_has_icon = 0
 execp_cache_icon = 0
@@ -531,9 +531,9 @@ execp_icon_h = 0
 #-------------------------------------
 # Executor 8
 execp = new
-execp_command = echo -e ""
+execp_command = echo /usr/share/icons/Papirus/16x16/panel/network-wireless-secure-signal-good.svg;
 execp_interval = 600
-execp_has_icon = 0
+execp_has_icon = 1
 execp_cache_icon = 1
 execp_continuous = 0
 execp_markup = 1
