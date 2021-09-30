@@ -4,7 +4,7 @@ checkfile=/home/ed/scripts/external_func.sh
 [[ ! -f $checkfile ]] && echo -e "File $(basename -- "$checkfile") does not exist. Press any key to continue." && read -rsn1 && exit 5 || source $checkfile;
 # Full system update
 function updatenow() {
-	yay -Syu --noconfirm
+	yay -Syu --noconfirm --logfile /home/ed/Downloads/sys_pacman.log
 	exitcode=$?
 	exitcontrol
 }

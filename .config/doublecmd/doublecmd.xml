@@ -340,7 +340,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/</Path>
+                  <Path>/home/ed/Downloads/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -406,7 +406,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/scripts/tint2/</Path>
+                  <Path>/home/ed/scripts/</Path>
                 </Paths>
               </Entry>
             </History>
