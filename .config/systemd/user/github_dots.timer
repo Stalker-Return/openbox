@@ -2,7 +2,8 @@
 Description=Github dotfiles update daily timer
 
 [Timer]
-OnCalendar=daily
+OnCalendar=*-*-* 00:44:00
+#OnCalendar=daily
 Persistent=true
 
 [Install]

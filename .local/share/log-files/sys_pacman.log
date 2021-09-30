@@ -1,0 +1,14 @@
+[2021-10-01T00:00:14+0300] [PACMAN] Running 'pacman --logfile /home/ed/Downloads/sys_pacman.log -S -u -y --noconfirm --config /etc/pacman.conf --'
+[2021-10-01T00:00:14+0300] [PACMAN] synchronizing package lists
+[2021-10-01T00:00:49+0300] [PACMAN] starting full system upgrade
+[2021-10-01T00:02:54+0300] [ALPM] transaction started
+[2021-10-01T00:02:54+0300] [ALPM] upgraded alsa-card-profiles (1:0.3.37-1 -> 1:0.3.38-1)
+[2021-10-01T00:02:54+0300] [ALPM] upgraded libsoup (2.74.0-2 -> 2.74.0-3)
+[2021-10-01T00:02:54+0300] [ALPM] upgraded lshw (B.02.19.2-2 -> B.02.19.2-3)
+[2021-10-01T00:02:56+0300] [ALPM] upgraded mesa (21.2.2-1 -> 21.2.3-1)
+[2021-10-01T00:02:57+0300] [ALPM] upgraded pipewire (1:0.3.37-1 -> 1:0.3.38-1)
+[2021-10-01T00:02:59+0300] [ALPM] upgraded qt5-base (5.15.2+kde+r227-1 -> 5.15.2+kde+r228-1)
+[2021-10-01T00:03:01+0300] [ALPM] transaction completed
+[2021-10-01T00:03:01+0300] [ALPM] running '30-systemd-udev-reload.hook'...
+[2021-10-01T00:03:01+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-10-01T00:03:02+0300] [ALPM] running 'update-desktop-database.hook'...
