@@ -1,9 +1,9 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 6.00 for ed on Mon Jul 26 12:21:33 2021.
+# Written by xscreensaver-demo 6.01 for ed on Wed Sep 29 07:24:27 2021.
 # https://www.jwz.org/xscreensaver/
 
-timeout:	0:05:00
-cycle:		0:06:00
+timeout:	0:08:00
+cycle:		0:09:00
 lock:		False
 lockTimeout:	0:00:00
 passwdTimeout:	0:00:30

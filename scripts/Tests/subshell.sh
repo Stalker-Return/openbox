@@ -1,15 +1,61 @@
-#!/bin/bash
+#!/bin/sh
 
-echo "<img>/usr/share/icons/Papirus/16x16/status/package-installed-updated.svg</img>"
-declare -i cpuFreq
-cpuFreq=$(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq | cut -f3 -d" " | cut -f1 -d".")
+# This script displays battery icon according to the charge level and charging state
 
-if [ $cpuFreq -ge 1000 ]
-then
-  cpu=$(echo $cpuFreq | cut -c1).$(echo $cpuFreq | cut -c2)GHz
+# Author: Piotr Miller
+# e-mail: nwg.piotr@gmail.com
+# Website: http://nwg.pl
+# Project: https://github.com/nwg-piotr/tint2-executors
+# License: GPL3
+
+# Dependencies: `acpi`
+
+bat=$(acpi -b)
+state=$(echo ${bat} | awk '{print $3}')
+
+if [[ "$state" = "Not" ]]; then
+    level=$(echo ${bat} | awk '{print $5}')
+    level=${level::-1}
+
 else
-  cpu=${cpuFreq}MHz
+    level=$(echo ${bat} | awk '{print $4}')
+    if [[ "$state" == *"Unknown"* ]]; then
+        level=${level::-1}
+    else
+        if [[ "$level" == "100%" ]]; then
+          level=${level::-1}
+        else
+          level=${level::-2}
+        fi
+    fi
 fi
 
-echo "<txt>"$(cat /sys/devices/virtual/thermal/thermal_zone0/temp  | awk ' { print $1 / 1000 }' | sed 's/\ \ */ /g' | cut -f2 -d" ")" C</txt>"
-echo "<tool>Freq: "$cpu"</tool>"
+if [[ "$bat" == *"until"* ]]; then
+
+    if [[ "$level" -ge "95" ]]; then
+        echo /usr/share/icons/Papirus/16x16/panel/keyboard-battery-full.svg
+    elif [[ "$level" -ge "75" ]]; then
+        echo /usr/share/icons/Papirus/16x16/panel/keyboard-battery-good.svg
+    elif [[ "$level" -ge "35" ]]; then
+        echo /usr/share/icons/Papirus/16x16/panel/keyboard-battery-medium.svg
+    elif [[ "$level" -ge "15" ]]; then
+        echo /usr/share/icons/Papirus/16x16/panel/keyboard-battery-low.svg
+    else
+        echo /usr/share/icons/Papirus/16x16/panel/keyboard-battery-empty.svg
+    fi
+else
+    if [[ "$level" -ge "95" ]]; then
+        echo /usr/share/icons/Papirus/16x16/panel/keyboard-battery-full.svg
+    elif [[ "$level" -ge "75" ]]; then
+        echo /usr/share/icons/Papirus/16x16/panel/keyboard-battery-good.svg
+    elif [[ "$level" -ge "35" ]]; then
+        echo /usr/share/icons/Papirus/16x16/panel/keyboard-battery-medium.svg
+    elif [[ "$level" -ge "15" ]]; then
+        echo /usr/share/icons/Papirus/16x16/panel/keyboard-battery-low.svg
+    else
+        echo /usr/share/icons/Papirus/16x16/panel/keyboard-battery-empty.svg
+    fi
+fi
+if  [[ $1 = "-l" ]]; then
+    echo ${level}%
+fi
