@@ -399,14 +399,14 @@
             <Sortings>
               <Sorting>
                 <Direction>2</Direction>
-                <Function>7</Function>
+                <Function>12</Function>
               </Sorting>
             </Sortings>
             <History>
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/.config/i3/</Path>
+                  <Path>/home/ed/.config/openbox/</Path>
                 </Paths>
               </Entry>
             </History>

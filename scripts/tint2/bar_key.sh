@@ -6,9 +6,9 @@ keylayout () {
 	KEYBOARD=$(xkblayout-state print '%s')
 	#KEYICON="\U0002328"
 		case $KEYBOARD in
-			"us")	KEYBANNER="🇺🇸" ;;
-			"ru")	KEYBANNER="🇷🇺" ;;
-			"ua")	KEYBANNER="🇺🇦" ;;
+			"us")	KEYBANNER="US 🇺🇸" ;;
+			"ru")	KEYBANNER="RU 🇷🇺" ;;
+			"ua")	KEYBANNER="UA 🇺🇦" ;;
 			*)		KEYBANNER="N/A" ;;
 		esac
 	echo -e "$KEYBANNER"
