@@ -440,7 +440,7 @@
 			</item>
 		</menu> <!-- the end of Applications -->
 
-		<!-- rootmenu / Sys Info-->
+		<!-- rootmenu / System-->
 		<menu id="sysinfo-menu" label="System" icon=".local/share/icons/places/folder-blue-open.svg">
 			<item label="System Information" icon=".local/share/icons/devices/hardinfo.png">
 				<action name="Execute"><execute>/usr/bin/hardinfo </execute></action>
@@ -478,7 +478,7 @@
 				<action name="Execute"><execute>xterm -bg gray9 -fg snow -T User_Timers -geometry 110x21+700+0 -e systemctl --user --all list-timers </execute></action>
 			</item>
 			<item label="reload user daemon" icon=".local/share/icons/apps/ccsm.svg">
-				<action name="Execute"><execute>xterm -bg gray9 -fg snow -e systemctl --user daemon-reload </execute></action>
+				<action name="Execute"><execute>xterm -bg red -fg black -T BackUp -geometry 55x3+0+0 -e 'tput civis; systemctl --user daemon-reload; tput cvvis' </execute></action>
 			</item>
 			<separator/>
 

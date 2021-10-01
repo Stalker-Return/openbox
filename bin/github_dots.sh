@@ -14,7 +14,7 @@ summctrl=0
 .config/geany/ .config/gtk-2.0/ .config/gtk-3.0/ .config/lxterminal/ .config/libreoffice/ .config/pulse/ \
 .config/lxpanel/ .config/lxsession/ .config/dunst/ .config/doublecmd/ .config/lxsession-default-apps/ \
 .config/systemd/ .config/tint2/ .config/powerkit/ .config/openbox/ .config/pcmanfm/ .config/alacritty/ \
-.config/Thunar/ .config/FreeFileSync/ .config/nyxt/ .config/conky/
+.config/Thunar/ .config/FreeFileSync/ .config/nyxt/ .config/conky/ .config/i3/
 exitcode=$?
 exitcontrol
 codedescription1=$codedescription
