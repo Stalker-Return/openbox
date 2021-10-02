@@ -12,3 +12,55 @@
 [2021-10-01T00:03:01+0300] [ALPM] running '30-systemd-udev-reload.hook'...
 [2021-10-01T00:03:01+0300] [ALPM] running '30-systemd-update.hook'...
 [2021-10-01T00:03:02+0300] [ALPM] running 'update-desktop-database.hook'...
+[2021-10-02T00:00:07+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -S -y -u --noconfirm --config /etc/pacman.conf --'
+[2021-10-02T00:00:07+0300] [PACMAN] synchronizing package lists
+[2021-10-02T00:00:20+0300] [PACMAN] starting full system upgrade
+[2021-10-02T00:03:00+0300] [ALPM] transaction started
+[2021-10-02T00:03:00+0300] [ALPM] upgraded hidapi (0.10.1-1 -> 0.11.0-1)
+[2021-10-02T00:03:00+0300] [ALPM] upgraded vulkan-icd-loader (1.2.191-1 -> 1.2.194-1)
+[2021-10-02T00:03:00+0300] [ALPM] upgraded libva (2.12.0-1 -> 2.13.0-1)
+[2021-10-02T00:03:46+0300] [ALPM] upgraded papirus-icon-theme (20210901-1 -> 20211001-1)
+[2021-10-02T00:03:53+0300] [ALPM] upgraded signal-desktop (5.17.2-1 -> 5.18.0-1)
+[2021-10-02T00:03:54+0300] [ALPM] upgraded udisks2 (2.9.3-1 -> 2.9.4-1)
+[2021-10-02T00:03:54+0300] [ALPM] transaction completed
+[2021-10-02T00:04:03+0300] [ALPM] running '30-systemd-daemon-reload.hook'...
+[2021-10-02T00:04:04+0300] [ALPM] running '30-systemd-tmpfiles.hook'...
+[2021-10-02T00:04:04+0300] [ALPM] running '30-systemd-udev-reload.hook'...
+[2021-10-02T00:04:04+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-10-02T00:04:05+0300] [ALPM] running 'dbus-reload.hook'...
+[2021-10-02T00:04:05+0300] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2021-10-02T00:04:47+0300] [ALPM] running 'update-desktop-database.hook'...
+[2021-10-02T00:05:16+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -S -y -u --noconfirm --config /etc/pacman.conf --'
+[2021-10-02T00:05:16+0300] [PACMAN] synchronizing package lists
+[2021-10-02T00:05:17+0300] [PACMAN] starting full system upgrade
+[2021-10-02T00:05:24+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -S -y --noconfirm --config /etc/pacman.conf -- community/nodejs community/oniguruma community/jq community/nodejs-nopt community/semver community/node-gyp community/npm'
+[2021-10-02T00:05:24+0300] [PACMAN] synchronizing package lists
+[2021-10-02T00:05:30+0300] [ALPM] transaction started
+[2021-10-02T00:05:30+0300] [ALPM] installed nodejs (16.10.0-1)
+[2021-10-02T00:05:30+0300] [ALPM] installed oniguruma (6.9.7.1-1)
+[2021-10-02T00:05:30+0300] [ALPM] installed jq (1.6-4)
+[2021-10-02T00:05:30+0300] [ALPM] installed nodejs-nopt (5.0.0-2)
+[2021-10-02T00:05:31+0300] [ALPM] installed semver (7.3.5-2)
+[2021-10-02T00:05:31+0300] [ALPM] installed node-gyp (8.2.0-1)
+[2021-10-02T00:05:32+0300] [ALPM] installed npm (7.24.1-1)
+[2021-10-02T00:05:33+0300] [ALPM] transaction completed
+[2021-10-02T00:05:33+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-10-02T00:05:33+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -D -q --asdeps --noconfirm --config /etc/pacman.conf -- nodejs oniguruma jq nodejs-nopt semver node-gyp npm'
+[2021-10-02T00:10:09+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -U --noconfirm --config /etc/pacman.conf -- /home/ed/.cache/yay/nodejs-nativefier/nodejs-nativefier-45.0.1-1-any.pkg.tar.zst'
+[2021-10-02T00:10:09+0300] [ALPM] transaction started
+[2021-10-02T00:10:11+0300] [ALPM] installed nodejs-nativefier (45.0.1-1)
+[2021-10-02T00:10:12+0300] [ALPM] transaction completed
+[2021-10-02T00:10:12+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-10-02T00:10:13+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -D -q --asdeps --noconfirm --config /etc/pacman.conf -- nodejs-nativefier'
+[2021-10-02T00:12:26+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -U --noconfirm --config /etc/pacman.conf -- /home/ed/.cache/yay/whatsapp-nativefier/whatsapp-nativefier-2.2138.10-1-x86_64.pkg.tar.zst'
+[2021-10-02T00:12:26+0300] [ALPM] transaction started
+[2021-10-02T00:12:29+0300] [ALPM] upgraded whatsapp-nativefier (2.2134.10-1 -> 2.2138.10-1)
+[2021-10-02T00:12:30+0300] [ALPM] transaction completed
+[2021-10-02T00:12:30+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-10-02T00:12:30+0300] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2021-10-02T00:12:30+0300] [ALPM] running 'update-desktop-database.hook'...
+[2021-10-02T21:58:14+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -S -y -u --noconfirm --config /etc/pacman.conf --'
+[2021-10-02T21:58:14+0300] [PACMAN] synchronizing package lists
+[2021-10-02T21:58:14+0300] [PACMAN] starting full system upgrade
+[2021-10-03T00:00:24+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -S -y -u --noconfirm --config /etc/pacman.conf --'
+[2021-10-03T00:00:24+0300] [PACMAN] synchronizing package lists

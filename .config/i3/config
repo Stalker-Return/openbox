@@ -114,9 +114,9 @@ set $ws3 "3: web"
 set $ws4 "4: geany"
 set $ws5 "5: pcmanfm"
 set $ws6 "6: anydesk"
-set $ws7 "7"
+set $ws7 "7: documents"
 set $ws8 "8"
-set $ws9 "9"
+set $ws9 "9: massager"
 set $ws10 "10"
 
 # switch to workspace
@@ -186,6 +186,8 @@ bar {
 
 # Keyboard Map Settings
 exec_always setxkbmap -option grp:switch,grp:ctrl_shift_toggle,grp_led:scroll us,ru,ua
+# keeps per window keyboard layout
+exec_always perWindowLayoutD
 
 # Set Wallpapers
 exec_always feh --no-fehbg --bg-scale '/home/ed/.local/share/wallpapers/01_gritty.png' 
@@ -198,6 +200,9 @@ for_window [class="firefox"] move to workspace $ws3
 for_window [class="Geany"] move to workspace $ws4
 for_window [class="Pcmanfm"] move to workspace $ws5
 for_window [class="Anydesk"] move to workspace $ws6
+for_window [class="XpdfReader"] move to workspace $ws7
+for_window [class="ViberPC"] move to workspace $ws9
+for_window [class="TelegramDesktop"] move to workspace $ws9
 
 # Keybindings to run apps:
 bindsym $mod+Shift+v exec brave %U
