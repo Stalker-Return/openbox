@@ -152,10 +152,11 @@ while true
     6 ) journalchk ;;
     7 ) failedsrvs ;;
     8 ) runreflector ;;
-    $'\e' ) exit;;		# Exit on ESC - button
-    x|X ) clear && exit;;
+    $'\e' ) clear; tput cvvis; exit;;		# Exit on ESC - button
+    x|X ) clear; tput cvvis; exit;;
     * ) invalid ;;
   esac
+  tput cvvis
  done
 }
 #

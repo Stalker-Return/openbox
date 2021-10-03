@@ -49,7 +49,7 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+d exec rofi -show drun -theme "Arc-Dark" -font "ubuntu 10"
+bindsym $mod+e exec rofi -show drun -theme "Arc-Dark" -font "ubuntu 10"
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -90,9 +90,9 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+#bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -109,10 +109,10 @@ bindsym $mod+a focus parent
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1: >_"
-set $ws2 "2: double"
+set $ws2 "2: files"
 set $ws3 "3: web"
 set $ws4 "4: geany"
-set $ws5 "5: pcmanfm"
+set $ws5 "5: apps"
 set $ws6 "6: anydesk"
 set $ws7 "7: documents"
 set $ws8 "8"
@@ -180,8 +180,19 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3blocks -c /home/ed/.config/i3/i3blocks.conf
+
+		status_command i3blocks -c /home/ed/.config/i3/i3blocks.conf
 #		status_command i3status -c /home/ed/.config/i3/i3status.conf
+	colors {
+		background #000000
+		statusline #ffffff
+		
+		active_workspace #ffffff #ff0000
+		focused_workspace #ffffff #000040
+		inactive_workspace #ffff00 #222222
+		urgent_workspace #ffffff #db0000
+	
+	}
 }
 
 # Keyboard Map Settings
@@ -192,20 +203,21 @@ exec_always perWindowLayoutD
 # Set Wallpapers
 exec_always feh --no-fehbg --bg-scale '/home/ed/.local/share/wallpapers/01_gritty.png' 
 
-# Assign apps to Workspace 3
+# Assign apps to Workspaces
 for_window [class="XTerm"] move to workspace $ws1
 for_window [class="Double Commander"] move to workspace $ws2
+for_window [class="Pcmanfm"] move to workspace $ws2
 for_window [class="Brave-browser"] move to workspace $ws3
 for_window [class="firefox"] move to workspace $ws3
 for_window [class="Geany"] move to workspace $ws4
-for_window [class="Pcmanfm"] move to workspace $ws5
 for_window [class="Anydesk"] move to workspace $ws6
 for_window [class="XpdfReader"] move to workspace $ws7
 for_window [class="ViberPC"] move to workspace $ws9
 for_window [class="TelegramDesktop"] move to workspace $ws9
 
 # Keybindings to run apps:
-bindsym $mod+Shift+v exec brave %U
-bindsym $mod+Shift+b exec doublecmd %F
-bindsym $mod+Shift+g exec geany ~/Documents/%F
-bindsym $mod+Shift+p exec pcmanfm
+bindsym $mod+b exec brave %U
+bindsym $mod+d exec doublecmd %F
+bindsym $mod+g exec geany ~/Documents/%F
+bindsym $mod+p exec pcmanfm
+bindsym $mod+q exec sh $HOME/scripts/lout.sh -f shd

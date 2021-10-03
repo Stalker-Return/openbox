@@ -64,3 +64,9 @@
 [2021-10-02T21:58:14+0300] [PACMAN] starting full system upgrade
 [2021-10-03T00:00:24+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -S -y -u --noconfirm --config /etc/pacman.conf --'
 [2021-10-03T00:00:24+0300] [PACMAN] synchronizing package lists
+[2021-10-03T00:00:27+0300] [PACMAN] starting full system upgrade
+[2021-10-03T00:00:32+0300] [ALPM] transaction started
+[2021-10-03T00:00:32+0300] [ALPM] upgraded coreutils (9.0-1 -> 9.0-2)
+[2021-10-03T00:00:32+0300] [ALPM] transaction completed
+[2021-10-03T00:00:33+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-10-03T00:00:33+0300] [ALPM] running 'texinfo-install.hook'...
