@@ -203,6 +203,12 @@ exec_always perWindowLayoutD
 # Set Wallpapers
 exec_always feh --no-fehbg --bg-scale '/home/ed/.local/share/wallpapers/01_gritty.png' 
 
+# set the screen resolution 1366x768
+#xrandr --output LVDS1 --mode 1366x768 &
+
+# set the screen resolution 1360x768 (virtual mode)
+#xrandr --output Virtual1 --mode 1360x768 &
+
 # Assign apps to Workspaces
 for_window [class="XTerm"] move to workspace $ws1
 for_window [class="Double Commander"] move to workspace $ws2

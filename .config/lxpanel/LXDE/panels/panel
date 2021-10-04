@@ -138,6 +138,23 @@ Plugin {
   }
 }
 Plugin {
+  type=batt
+  Config {
+    BackgroundColor=black
+    ChargingColor1=#28f200
+    ChargingColor2=#22cc00
+    DischargingColor1=#ffee00
+    DischargingColor2=#d9ca00
+    HideIfNoBattery=0
+    AlarmCommand=notify-send "Battery low" --icon=battery-caution
+    AlarmTime=5
+    BorderWidth=4
+    Size=4
+    ShowExtendedInformation=0
+    BatteryNumber=0
+  }
+}
+Plugin {
   type=xkb
   Config {
     Model=pc105

@@ -23,6 +23,9 @@
       <item label="Vim" icon="/usr/share/icons/hicolor/48x48/apps/gvim.png">
        <action name="Execute"><execute>xterm -e vim </execute></action>
      </item>
+      <item label="Xarchiver" icon="/usr/share/icons/hicolor/16x16/apps/xarchiver.png">
+       <action name="Execute"><execute>xarchiver </execute></action>
+     </item>
  </menu> <!-- Accessories -->
  <menu id="Education" label="Education">
       <item label="LibreOffice Math" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-math.png">
@@ -201,5 +204,8 @@
      </item>
       <item label="conky">
        <action name="Execute"><execute>conky --daemonize --pause=1</execute></action>
+     </item>
+      <item label="ranger">
+       <action name="Execute"><execute>xterm -e ranger</execute></action>
      </item>
  </menu> <!-- System Tools -->
