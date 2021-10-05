@@ -70,3 +70,14 @@
 [2021-10-03T00:00:32+0300] [ALPM] transaction completed
 [2021-10-03T00:00:33+0300] [ALPM] running '30-systemd-update.hook'...
 [2021-10-03T00:00:33+0300] [ALPM] running 'texinfo-install.hook'...
+[2021-10-04T07:12:20+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -S -y -u --noconfirm --config /etc/pacman.conf --'
+[2021-10-04T07:12:20+0300] [PACMAN] synchronizing package lists
+[2021-10-04T07:12:27+0300] [PACMAN] starting full system upgrade
+[2021-10-04T07:12:55+0300] [ALPM] transaction started
+[2021-10-04T07:12:55+0300] [ALPM] upgraded libproxy (0.4.17-2 -> 0.4.17-3)
+[2021-10-04T07:12:56+0300] [ALPM] upgraded rclone (1.56.1-1 -> 1.56.2-1)
+[2021-10-04T07:12:57+0300] [ALPM] transaction completed
+[2021-10-04T07:12:57+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-10-04T07:12:57+0300] [ALPM] running 'detect-old-perl-modules.hook'...
+[2021-10-05T07:03:34+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -S -y -u --noconfirm --config /etc/pacman.conf --'
+[2021-10-05T07:03:34+0300] [PACMAN] synchronizing package lists

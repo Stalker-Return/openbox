@@ -22,7 +22,7 @@ function notification() {
 }
 # Logout Menu
 function i3logout() {
-	selection=$(zenity --list --imagelist --print-column=2 --width=250 --height=230 --column="Image" --column="Function" \
+	selection=$(zenity --list --imagelist --print-column=2 --width=200 --height=220 --column="Image" --column="Function" \
 	--text="Make your fucking choise" --title="i3 Logout Session" --hide-header \
 	"$shutdownicon" "Shutdown" \
 	"$rebooticon" "Reboot" \

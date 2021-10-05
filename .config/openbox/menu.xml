@@ -531,8 +531,8 @@
 			<item label="Bluetooth Adapters" icon=".local/share/icons/apps/preferences-system-bluetooth.svg">
 				<action name="Execute"><execute>blueman-adapters</execute></action>
 			</item>
-			<item label="PowerKit Configuration" icon=".local/share/icons/devices/battery.svg">
-				<action name="Execute"><execute>powerkit --config </execute></action>
+			<item label="Power Manager" icon=".local/share/icons/devices/battery.svg">
+				<action name="Execute"><execute>xfce4-power-manager -c </execute></action>
 			</item>
 			<item label="Audacity" icon=".local/share/icons/apps/audacity.svg">
 				<action name="Execute"><execute>env UBUNTU_MENUPROXY=0 audacity </execute></action>

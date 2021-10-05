@@ -226,4 +226,4 @@ bindsym $mod+b exec brave %U
 bindsym $mod+d exec doublecmd %F
 bindsym $mod+g exec geany ~/Documents/%F
 bindsym $mod+p exec pcmanfm
-bindsym $mod+q exec sh $HOME/scripts/lout.sh -f shd
+bindsym $mod+q exec sh $HOME/scripts/i3/lout_i3.sh
