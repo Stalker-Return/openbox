@@ -112,12 +112,12 @@ set $ws1 "1: >_"
 set $ws2 "2: 📁"
 set $ws3 "3: 🌐"
 set $ws4 "4: ✍️"
-set $ws5 "5: 🈸"
-set $ws6 "6: 🔗"
+set $ws5 "5: 🗄️"
+set $ws6 "6: 💻"
 set $ws7 "7: 📝"
-set $ws8 "8"
+set $ws8 "8: 💽"
 set $ws9 "9: 💬"
-set $ws10 "10"
+set $ws10 "10: 💻"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -203,6 +203,8 @@ exec_always perWindowLayoutD
 # Set Wallpapers
 exec_always feh --no-fehbg --bg-scale '/home/ed/.local/share/wallpapers/01_gritty.png' 
 
+exec_always sudo mkdir -p /run/media/ed/DATA
+
 # exec_always pcmanfm --daemon-mode &	
 
 # set the screen resolution 1366x768
@@ -217,17 +219,22 @@ for_window [class="Double Commander"] move to workspace $ws2
 for_window [class="Pcmanfm"] move to workspace $ws2
 for_window [class="Brave-browser"] move to workspace $ws3
 for_window [class="firefox"] move to workspace $ws3
-for_window [class="Geany"] move to workspace $ws5
-for_window [class="KeePassXC"] move to workspace $ws4
+for_window [class="Geany"] move to workspace $ws4
+for_window [class="FreeFileSync"] move to workspace $ws5
+for_window [class="KeePassXC"] move to workspace $ws5
 for_window [class="Anydesk"] move to workspace $ws6
 for_window [class="XpdfReader"] move to workspace $ws7
 for_window [class="ViberPC"] move to workspace $ws9
 for_window [class="TelegramDesktop"] move to workspace $ws9
 for_window [class="Signal"] move to workspace $ws9
 
-# Keybindings to run apps:
+# Super Keybindings to run apps:
 bindsym $mod+w exec brave %U
 bindsym $mod+d exec doublecmd %F
+bindsym $mod+t exec lxterminal
 bindsym $mod+g exec geany ~/Documents/%F
 bindsym $mod+p exec pcmanfm
 bindsym $mod+q exec sh $HOME/scripts/i3/lout_i3.sh
+
+# Super+Shift Keybindings to run apps:
+bindsym $mod+Shift+p scrot -s ~/Pictures/%Y-%m-%d-%T-screenshot.png

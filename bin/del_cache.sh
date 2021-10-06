@@ -13,7 +13,7 @@ function notifynownow() {
 	iconerr=/home/ed/.local/share/icons/status/dialog-warning.svg
 	iconst=/home/ed/.local/share/icons/status/trophy-gold.svg
 
-	echo "Cache in the home directory has cleaned: $(date), exit code = $exitcode: $codedescription" \
+	echo "exit code = $exitcode: $codedescription: $(date): Cache in the home directory has cleaned." \
 	>> $HOME/.local/share/log-files/del_cache.log
 
 	case $exitcode in
