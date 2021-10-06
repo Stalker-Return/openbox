@@ -6,8 +6,8 @@
 #
 # BASH PROMPT
 #PS1='[\u@\h \W]\$ '
-PS1='[\D{%a, %b-%d} \w]\n\$ '
-#PS1='\w \> '
+#PS1='[\D{%a, %b-%d} \w]\n\$ '
+PS1='\w \> '
 printf '\e[4 q'												# blinking underline cursor for Xterm
 #
 ### Exports

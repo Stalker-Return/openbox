@@ -3,6 +3,7 @@ Description=Clean orphan packages monthly
 
 [Timer]
 OnCalendar=monthly
+#OnCalendar=*-*-* 08:45:00
 Persistent=true
 
 [Install]

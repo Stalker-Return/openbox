@@ -81,3 +81,83 @@
 [2021-10-04T07:12:57+0300] [ALPM] running 'detect-old-perl-modules.hook'...
 [2021-10-05T07:03:34+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -S -y -u --noconfirm --config /etc/pacman.conf --'
 [2021-10-05T07:03:34+0300] [PACMAN] synchronizing package lists
+[2021-10-05T07:03:39+0300] [PACMAN] starting full system upgrade
+[2021-10-05T07:05:01+0300] [ALPM] running '60-mkinitcpio-remove.hook'...
+[2021-10-05T07:05:01+0300] [ALPM] transaction started
+[2021-10-05T07:05:02+0300] [ALPM] upgraded tzdata (2021b-1 -> 2021c-1)
+[2021-10-05T07:05:02+0300] [ALPM] upgraded systemd-libs (249.4-1 -> 249.4-2)
+[2021-10-05T07:05:02+0300] [ALPM] upgraded ca-certificates-mozilla (3.70-1 -> 3.71-1)
+[2021-10-05T07:05:02+0300] [ALPM] upgraded fribidi (1.0.10-1 -> 1.0.11-1)
+[2021-10-05T07:05:02+0300] [ALPM] upgraded imagemagick (7.1.0.8-1 -> 7.1.0.9-1)
+[2021-10-05T07:05:03+0300] [ALPM] upgraded libnewt (0.52.21-5 -> 0.52.21-6)
+[2021-10-05T07:05:03+0300] [ALPM] upgraded libsoup3 (3.0.0-2 -> 3.0.1-1)
+[2021-10-05T07:05:04+0300] [ALPM] upgraded systemd (249.4-1 -> 249.4-2)
+[2021-10-05T07:05:21+0300] [ALPM] upgraded linux (5.14.8.arch1-1 -> 5.14.9.arch2-1)
+[2021-10-05T07:05:35+0300] [ALPM] upgraded linux-headers (5.14.8.arch1-1 -> 5.14.9.arch2-1)
+[2021-10-05T07:05:35+0300] [ALPM] upgraded nss (3.70-1 -> 3.71-1)
+[2021-10-05T07:05:38+0300] [ALPM] upgraded qt5-base (5.15.2+kde+r228-1 -> 5.15.2+kde+r234-1)
+[2021-10-05T07:05:38+0300] [ALPM] upgraded systemd-sysvcompat (249.4-1 -> 249.4-2)
+[2021-10-05T07:05:38+0300] [ALPM] upgraded vte-common (0.64.2-2 -> 0.66.0-1)
+[2021-10-05T07:05:38+0300] [ALPM] upgraded vte3 (0.64.2-2 -> 0.66.0-1)
+[2021-10-05T07:05:39+0300] [ALPM] transaction completed
+[2021-10-05T07:05:41+0300] [ALPM] running '20-systemd-sysusers.hook'...
+[2021-10-05T07:05:42+0300] [ALPM] running '30-systemd-catalog.hook'...
+[2021-10-05T07:05:42+0300] [ALPM] running '30-systemd-daemon-reload.hook'...
+[2021-10-05T07:05:44+0300] [ALPM] running '30-systemd-hwdb.hook'...
+[2021-10-05T07:05:46+0300] [ALPM] running '30-systemd-sysctl.hook'...
+[2021-10-05T07:05:46+0300] [ALPM] running '30-systemd-tmpfiles.hook'...
+[2021-10-05T07:05:46+0300] [ALPM] running '30-systemd-udev-reload.hook'...
+[2021-10-05T07:05:46+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-10-05T07:05:46+0300] [ALPM] running '40-update-ca-trust.hook'...
+[2021-10-05T07:05:50+0300] [ALPM] running '60-depmod.hook'...
+[2021-10-05T07:05:59+0300] [ALPM] running '90-mkinitcpio-install.hook'...
+[2021-10-05T07:05:59+0300] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+[2021-10-05T07:05:59+0300] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux.img
+[2021-10-05T07:05:59+0300] [ALPM-SCRIPTLET] ==> Starting build: 5.14.9-arch2-1
+[2021-10-05T07:06:00+0300] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2021-10-05T07:06:01+0300] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2021-10-05T07:06:01+0300] [ALPM-SCRIPTLET]   -> Running build hook: [autodetect]
+[2021-10-05T07:06:02+0300] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2021-10-05T07:06:02+0300] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2021-10-05T07:06:05+0300] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2021-10-05T07:06:05+0300] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2021-10-05T07:06:06+0300] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2021-10-05T07:06:07+0300] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2021-10-05T07:06:07+0300] [ALPM-SCRIPTLET] ==> Creating zstd-compressed initcpio image: /boot/initramfs-linux.img
+[2021-10-05T07:06:09+0300] [ALPM-SCRIPTLET] ==> Image generation successful
+[2021-10-05T07:06:09+0300] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'fallback'
+[2021-10-05T07:06:09+0300] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux-fallback.img -S autodetect
+[2021-10-05T07:06:09+0300] [ALPM-SCRIPTLET] ==> Starting build: 5.14.9-arch2-1
+[2021-10-05T07:06:09+0300] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2021-10-05T07:06:10+0300] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2021-10-05T07:06:10+0300] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2021-10-05T07:06:10+0300] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2021-10-05T07:06:15+0300] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: aic94xx
+[2021-10-05T07:06:15+0300] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: wd719x
+[2021-10-05T07:06:18+0300] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: xhci_pci
+[2021-10-05T07:06:22+0300] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2021-10-05T07:06:25+0300] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2021-10-05T07:06:29+0300] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2021-10-05T07:06:30+0300] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2021-10-05T07:06:31+0300] [ALPM-SCRIPTLET] ==> Creating zstd-compressed initcpio image: /boot/initramfs-linux-fallback.img
+[2021-10-05T07:06:35+0300] [ALPM-SCRIPTLET] ==> Image generation successful
+[2021-10-05T07:06:35+0300] [ALPM] running 'dbus-reload.hook'...
+[2021-10-05T07:06:35+0300] [ALPM] running 'detect-old-perl-modules.hook'...
+[2021-10-05T07:11:07+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -S -y -u --noconfirm --config /etc/pacman.conf --'
+[2021-10-05T07:11:07+0300] [PACMAN] synchronizing package lists
+[2021-10-05T07:11:08+0300] [PACMAN] starting full system upgrade
+[2021-10-05T07:13:33+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -U --noconfirm --config /etc/pacman.conf -- /home/ed/.cache/yay/brave-bin/brave-bin-1:1.30.87-1-x86_64.pkg.tar.zst'
+[2021-10-05T07:13:33+0300] [ALPM] transaction started
+[2021-10-05T07:13:38+0300] [ALPM] upgraded brave-bin (1:1.30.86-1 -> 1:1.30.87-1)
+[2021-10-05T07:13:39+0300] [ALPM] transaction completed
+[2021-10-05T07:13:39+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-10-05T07:13:39+0300] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2021-10-05T07:13:40+0300] [ALPM] running 'update-desktop-database.hook'...
+[2021-10-05T07:14:40+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -U --noconfirm --config /etc/pacman.conf -- /home/ed/.cache/yay/qogir-gtk-theme/qogir-gtk-theme-2021.08.02-2-any.pkg.tar.zst'
+[2021-10-05T07:14:42+0300] [ALPM] transaction started
+[2021-10-05T07:14:51+0300] [ALPM] upgraded qogir-gtk-theme (2021.08.02-1 -> 2021.08.02-2)
+[2021-10-05T07:14:52+0300] [ALPM] transaction completed
+[2021-10-05T07:14:53+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-10-06T08:25:16+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -S -u -y --noconfirm --config /etc/pacman.conf --'
+[2021-10-06T08:25:16+0300] [PACMAN] synchronizing package lists
+[2021-10-06T08:25:18+0300] [PACMAN] starting full system upgrade

@@ -340,7 +340,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/</Path>
+                  <Path>/run/media/ed/TOSHIBA EXT/Movies/Brexit-2019/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -398,7 +398,7 @@
           <FileView Type="columns">
             <Sortings>
               <Sorting>
-                <Direction>2</Direction>
+                <Direction>1</Direction>
                 <Function>12</Function>
               </Sorting>
             </Sortings>
@@ -406,7 +406,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/.config/i3/</Path>
+                  <Path>/home/ed/.config/openbox/</Path>
                 </Paths>
               </Entry>
             </History>
