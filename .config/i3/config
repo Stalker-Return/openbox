@@ -117,7 +117,7 @@ set $ws6 "6: 💻"
 set $ws7 "7: 📝"
 set $ws8 "8: 💽"
 set $ws9 "9: 💬"
-set $ws10 "10: 💻"
+set $ws10 "10: 🛠️"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -224,6 +224,7 @@ for_window [class="FreeFileSync"] move to workspace $ws5
 for_window [class="KeePassXC"] move to workspace $ws5
 for_window [class="Anydesk"] move to workspace $ws6
 for_window [class="XpdfReader"] move to workspace $ws7
+for_window [class="Master PDF Editor"] move to workspace $ws7
 for_window [class="ViberPC"] move to workspace $ws9
 for_window [class="TelegramDesktop"] move to workspace $ws9
 for_window [class="Signal"] move to workspace $ws9
