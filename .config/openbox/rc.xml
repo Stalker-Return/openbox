@@ -371,7 +371,7 @@
     <!-- Run rofi -->
     <keybind key="W-r">
       <action name="Execute">
-        <command>rofi -show drun -theme "Arc-Dark" -font "ubuntu 10"</command>
+        <command>rofi -show run -theme "Arc-Dark" -font "ubuntu 10"</command>
       </action>
     </keybind>
     <!-- Reboot -->

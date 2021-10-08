@@ -13,7 +13,7 @@ function notifynownow() {
 	iconerr=/home/ed/.local/share/icons/status/dialog-warning.svg
 	iconst=/home/ed/.local/share/icons/status/trophy-gold.svg
 
-	echo "Full System Update has completed: $(date), exit code = $exitcode: $codedescription" \
+	echo "Exit code = $exitcode | $codedescription | $(date) | Full System Update has completed." \
 	>> $HOME/.local/share/log-files/sys_update.log
 
 	case $exitcode in

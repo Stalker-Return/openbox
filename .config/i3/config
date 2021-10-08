@@ -30,6 +30,17 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# Gaps Settins
+# gaps [inner|outer|horizontal|vertical|top|left|bottom|right] <px>
+# workspace <ws> gaps [inner|outer|horizontal|vertical|top|left|bottom|right] <px>
+hide_edge_borders both
+#for_window [class="Brave-browser"] border pixel 0
+gaps inner 7
+gaps outer 0
+workspace $ws3 gaps vertical 100
+workspace $ws3 gaps inner 0
+workspace $ws3 gaps outer 0
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -48,8 +59,8 @@ bindsym $mod+Return exec xterm
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-#bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+e exec rofi -show drun -theme "Arc-Dark" -font "ubuntu 10"
+bindsym $mod+e exec --no-startup-id dmenu_run -fn 'Droid Sans Mono-9'
+#bindsym $mod+e exec rofi -show drun -theme "Arc-Dark" -font "ubuntu 10"
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
