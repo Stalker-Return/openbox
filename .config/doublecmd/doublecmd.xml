@@ -455,11 +455,11 @@
     <AlwaysShowTrayIcon>False</AlwaysShowTrayIcon>
     <Mouse>
       <Selection Enabled="True">
-        <Button>0</Button>
+        <Button>1</Button>
         <IconClick>0</IconClick>
       </Selection>
       <SingleClickStart>0</SingleClickStart>
-      <ScrollMode>1</ScrollMode>
+      <ScrollMode>0</ScrollMode>
       <WheelScrollLines>3</WheelScrollLines>
     </Mouse>
     <AutoFillColumns>False</AutoFillColumns>

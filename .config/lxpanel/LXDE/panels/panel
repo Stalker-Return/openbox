@@ -9,7 +9,7 @@ Global {
   width=100
   height=24
   transparent=1
-  tintcolor=#000000
+  tintcolor=#000040
   alpha=255
   setdocktype=1
   setpartialstrut=1
@@ -20,6 +20,8 @@ Global {
   background=0
   backgroundfile=/usr/share/lxpanel/images/background.png
   iconsize=19
+  usefontsize=1
+  fontsize=10
 }
 Plugin {
   type=space
@@ -133,8 +135,24 @@ Plugin {
   }
 }
 Plugin {
-  type=cpu
+  type=space
   Config {
+    Size=5
+  }
+  expand=0
+}
+Plugin {
+  type=deskno
+  Config {
+  }
+}
+Plugin {
+  type=monitors
+  Config {
+    DisplayCPU=1
+    DisplayRAM=1
+    CPUColor=#0000FF
+    RAMColor=#FF0000
   }
 }
 Plugin {
@@ -155,6 +173,12 @@ Plugin {
   }
 }
 Plugin {
+  type=space
+  Config {
+    Size=5
+  }
+}
+Plugin {
   type=xkb
   Config {
     Model=pc105
@@ -167,6 +191,12 @@ Plugin {
   }
 }
 Plugin {
+  type=space
+  Config {
+    Size=5
+  }
+}
+Plugin {
   type=thermal
   Config {
     NormalColor=#00ff00
@@ -176,6 +206,12 @@ Plugin {
     Warning1Temp=82
     Warning2Temp=87
     AutomaticSensor=1
+  }
+}
+Plugin {
+  type=space
+  Config {
+    Size=5
   }
 }
 Plugin {

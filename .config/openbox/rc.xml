@@ -121,8 +121,8 @@
     <number>2</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>(First)</name>
-      <name>(Second)</name>
+      <name>$ws1</name>
+      <name>$ws2</name>
     </names>
     <popupTime>300</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -447,12 +447,19 @@
         <command>thunderbird</command>
       </action>
     </keybind>
-    <!-- Play Music -->
+    <!-- Mount mountable volumes -->
     <keybind key="A-C-m">
       <action name="Execute">
-        <command>sh ~/scripts/play-mp3.sh </command>
+        <command>sh ~/scripts/mount.sh </command>
       </action>
     </keybind>
+    <!-- Unmount volumes -->
+    <keybind key="A-C-u">
+      <action name="Execute">
+        <command>sh ~/scripts/umount.sh </command>
+      </action>
+    </keybind>
+    <!-- Run lxtask -->
     <keybind key="A-C-t">
       <action name="Execute">
         <command>lxtask</command>

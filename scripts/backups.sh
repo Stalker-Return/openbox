@@ -7,10 +7,10 @@ checkfile=/home/ed/scripts/backups.conf
 [[ ! -f $checkfile ]] && echo -e "File $(basename -- "$checkfile") does not exist. Press any key to continue." && read -rsn1 && exit 5 || backup_list=$checkfile;
 #
 function savefiles() {
-	rsync -ar --delete /home/ed/Clouds "/run/media/ed/TOSHIBA EXT"
+	rsync -ar --delete /home/ed/Clouds "/run/media/ed/DATA"
 	while read filename
 		do
-			rsync -ar --delete $filename "/run/media/ed/TOSHIBA EXT/Storage/Linux"
+			rsync -ar --delete $filename "/run/media/ed/DATA/Storage/Linux"
 		done < $backup_list
 }
 echo -ne "Backup in progress... "
