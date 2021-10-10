@@ -217,3 +217,13 @@
 [2021-10-08T07:37:04+0300] [ALPM] running 'update-mime-database.hook'...
 [2021-10-09T00:54:40+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -S -y -u --noconfirm --config /etc/pacman.conf --'
 [2021-10-09T00:54:40+0300] [PACMAN] synchronizing package lists
+[2021-10-09T00:54:43+0300] [PACMAN] starting full system upgrade
+[2021-10-09T00:56:54+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -U --noconfirm --config /etc/pacman.conf -- /home/ed/.cache/yay/skypeforlinux-stable-bin/skypeforlinux-stable-bin-8.77.0.90-1-x86_64.pkg.tar.zst'
+[2021-10-09T00:56:54+0300] [ALPM] transaction started
+[2021-10-09T00:56:59+0300] [ALPM] upgraded skypeforlinux-stable-bin (8.75.0.140-1 -> 8.77.0.90-1)
+[2021-10-09T00:57:00+0300] [ALPM] transaction completed
+[2021-10-09T00:57:00+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-10-09T00:57:00+0300] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2021-10-09T00:57:01+0300] [ALPM] running 'update-desktop-database.hook'...
+[2021-10-10T09:15:14+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -S -y -u --noconfirm --config /etc/pacman.conf --'
+[2021-10-10T09:15:14+0300] [PACMAN] synchronizing package lists

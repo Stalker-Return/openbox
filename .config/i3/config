@@ -37,7 +37,6 @@ hide_edge_borders both
 #for_window [class="Brave-browser"] border pixel 0
 gaps inner 7
 gaps outer 0
-workspace $ws3 gaps vertical 100
 workspace $ws3 gaps inner 0
 workspace $ws3 gaps outer 0
 
@@ -195,11 +194,11 @@ bar {
 		status_command i3blocks -c /home/ed/.config/i3/i3blocks.conf
 #		status_command i3status -c /home/ed/.config/i3/i3status.conf
 	colors {
-		background #000000
+		background #000030
 		statusline #ffffff
 		
 		active_workspace #ffffff #ff0000
-		focused_workspace #ffffff #000040
+		focused_workspace #ffffff #000000
 		inactive_workspace #ffff00 #222222
 		urgent_workspace #ffffff #db0000
 	
@@ -212,9 +211,12 @@ exec_always setxkbmap -option grp:switch,grp:ctrl_shift_toggle,grp_led:scroll us
 exec_always perWindowLayoutD
 
 # Set Wallpapers
-exec_always feh --no-fehbg --bg-scale '/home/ed/.local/share/wallpapers/01_gritty.png' 
+exec_always feh --no-fehbg --bg-scale '/home/ed/.local/share/wallpapers/01_programming-wallpaper.jpg'
 
+# Make dirs to mount usb drives
 exec_always sudo mkdir -p /run/media/ed/DATA
+exec_always sudo mkdir -p /run/media/ed/usb1
+exec_always sudo mkdir -p /run/media/ed/usb2
 
 # exec_always pcmanfm --daemon-mode &	
 
@@ -247,6 +249,8 @@ bindsym $mod+t exec lxterminal
 bindsym $mod+g exec geany ~/Documents/%F
 bindsym $mod+p exec pcmanfm
 bindsym $mod+q exec sh $HOME/scripts/i3/lout_i3.sh
+bindsym $mod+m exec sh $HOME/scripts/i3/mount_i3.sh
+bindsym $mod+u exec sh $HOME/scripts/i3/umount_i3.sh
 
 # Super+Shift Keybindings to run apps:
 bindsym $mod+Shift+p scrot -s ~/Pictures/%Y-%m-%d-%T-screenshot.png
