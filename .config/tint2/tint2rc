@@ -483,7 +483,7 @@ execp_icon_h = 0
 #-------------------------------------
 # Executor 6
 execp = new
-execp_command = CHARGE=$(cat /sys/class/power_supply/BAT1/capacity); STATUS=$(cat /sys/class/power_supply/BAT1/status); case $STATUS in "Charging" | "Unknown" | "Full" ) BATICON="⚡️" ;; "Discharging") if [ "$CHARGE" -eq 0 ]; then BATICON=""; elif [ "$CHARGE" -gt 0 ] && [ "$CHARGE" -le 30 ]; then BATICON=""; elif [ "$CHARGE" -gt 30 ] && [ "$CHARGE" -le 60 ]; then BATICON=""; elif [ "$CHARGE" -gt 60 ] && [ "$CHARGE" -le 90 ]; then BATICON=""; else BATICON="🔋"; fi;; *) BATICON="N/A";; esac; echo -e "$BATICON $CHARGE%"
+execp_command = CHARGE=$(cat /sys/class/power_supply/BAT1/capacity); STATUS=$(cat /sys/class/power_supply/BAT1/status); case $STATUS in "Charging" | "Unknown" | "Full" ) BATICON="\U00026A1" ;; "Discharging") if [ "$CHARGE" -eq 0 ]; then BATICON=""; elif [ "$CHARGE" -gt 0 ] && [ "$CHARGE" -le 30 ]; then BATICON=""; elif [ "$CHARGE" -gt 30 ] && [ "$CHARGE" -le 60 ]; then BATICON=""; elif [ "$CHARGE" -gt 60 ] && [ "$CHARGE" -le 90 ]; then BATICON=""; else BATICON="🔋"; fi;; *) BATICON="N/A";; esac; echo -e "$BATICON $CHARGE%"
 execp_interval = 30
 execp_has_icon = 0
 execp_cache_icon = 0

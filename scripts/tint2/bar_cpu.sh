@@ -20,7 +20,7 @@ cputint2 () {
 			elif [ "$INTCPU" -gt 780 ] && [ "$INTCPU" -le 910 ]; then CPUICON="▇"
 	        else CPUICON="█"
 		fi
-		echo -e "$CPUICON $BARCPU%"
+		echo -e "\e[0;31m$CPUICON\e[0m $BARCPU%"
 }
 
 cputint2

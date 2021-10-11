@@ -290,3 +290,67 @@
 [2021-10-10T09:25:43+0300] [ALPM] upgraded yay (10.3.1-2 -> 11.0.0-1)
 [2021-10-10T09:25:44+0300] [ALPM] transaction completed
 [2021-10-10T09:25:44+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-10-11T00:00:44+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -S -y -u --noconfirm --config /etc/pacman.conf --'
+[2021-10-11T00:00:44+0300] [PACMAN] synchronizing package lists
+[2021-10-11T00:00:47+0300] [PACMAN] starting full system upgrade
+[2021-10-11T00:01:18+0300] [ALPM] transaction started
+[2021-10-11T00:01:18+0300] [ALPM] upgraded automake (1.16.4-1 -> 1.16.5-1)
+[2021-10-11T00:01:28+0300] [ALPM] upgraded btrfs-progs (5.14.1-1 -> 5.14.2-1)
+[2021-10-11T00:01:29+0300] [ALPM] upgraded kwayland (5.86.0-1 -> 5.87.0-1)
+[2021-10-11T00:01:29+0300] [ALPM] upgraded luit (20201003-1 -> 20210218-1)
+[2021-10-11T00:01:29+0300] [ALPM] upgraded polkit (0.119-1 -> 0.120-2)
+[2021-10-11T00:01:30+0300] [ALPM] transaction completed
+[2021-10-11T00:01:30+0300] [ALPM] running '20-systemd-sysusers.hook'...
+[2021-10-11T00:01:30+0300] [ALPM] running '30-systemd-daemon-reload.hook'...
+[2021-10-11T00:01:32+0300] [ALPM] running '30-systemd-udev-reload.hook'...
+[2021-10-11T00:01:32+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-10-11T00:01:32+0300] [ALPM] running '90-mkinitcpio-install.hook'...
+[2021-10-11T00:01:32+0300] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+[2021-10-11T00:01:32+0300] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux.img
+[2021-10-11T00:01:32+0300] [ALPM-SCRIPTLET] ==> Starting build: 5.14.10-arch1-1
+[2021-10-11T00:01:33+0300] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2021-10-11T00:01:34+0300] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2021-10-11T00:01:35+0300] [ALPM-SCRIPTLET]   -> Running build hook: [autodetect]
+[2021-10-11T00:01:36+0300] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2021-10-11T00:01:36+0300] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2021-10-11T00:01:46+0300] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2021-10-11T00:01:47+0300] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2021-10-11T00:01:49+0300] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2021-10-11T00:01:49+0300] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2021-10-11T00:01:50+0300] [ALPM-SCRIPTLET] ==> Creating zstd-compressed initcpio image: /boot/initramfs-linux.img
+[2021-10-11T00:01:52+0300] [ALPM-SCRIPTLET] ==> Image generation successful
+[2021-10-11T00:01:52+0300] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'fallback'
+[2021-10-11T00:01:52+0300] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux-fallback.img -S autodetect
+[2021-10-11T00:01:53+0300] [ALPM-SCRIPTLET] ==> Starting build: 5.14.10-arch1-1
+[2021-10-11T00:01:53+0300] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2021-10-11T00:01:54+0300] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2021-10-11T00:01:56+0300] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2021-10-11T00:01:56+0300] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2021-10-11T00:02:07+0300] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: aic94xx
+[2021-10-11T00:02:08+0300] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: wd719x
+[2021-10-11T00:02:14+0300] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: xhci_pci
+[2021-10-11T00:02:18+0300] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2021-10-11T00:02:22+0300] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2021-10-11T00:02:28+0300] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2021-10-11T00:02:28+0300] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2021-10-11T00:02:30+0300] [ALPM-SCRIPTLET] ==> Creating zstd-compressed initcpio image: /boot/initramfs-linux-fallback.img
+[2021-10-11T00:02:35+0300] [ALPM-SCRIPTLET] ==> Image generation successful
+[2021-10-11T00:02:35+0300] [ALPM] running 'dbus-reload.hook'...
+[2021-10-11T00:02:35+0300] [ALPM] running 'texinfo-install.hook'...
+[2021-10-11T00:05:24+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -S -y -u --noconfirm --config /etc/pacman.conf --'
+[2021-10-11T00:05:24+0300] [PACMAN] synchronizing package lists
+[2021-10-11T00:05:25+0300] [PACMAN] starting full system upgrade
+[2021-10-11T00:05:32+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -S -y --noconfirm --config /etc/pacman.conf -- community/go'
+[2021-10-11T00:05:32+0300] [PACMAN] synchronizing package lists
+[2021-10-11T00:05:38+0300] [ALPM] transaction started
+[2021-10-11T00:05:47+0300] [ALPM] installed go (2:1.17.1-1)
+[2021-10-11T00:05:47+0300] [ALPM] transaction completed
+[2021-10-11T00:05:48+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-10-11T00:05:48+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -D -q --asdeps --noconfirm --config /etc/pacman.conf -- go'
+[2021-10-11T00:11:59+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -U --noconfirm --config /etc/pacman.conf -- /home/ed/.cache/yay/yay/yay-11.0.1-1-x86_64.pkg.tar.zst'
+[2021-10-11T00:12:00+0300] [ALPM] transaction started
+[2021-10-11T00:12:00+0300] [ALPM] upgraded yay (11.0.0-1 -> 11.0.1-1)
+[2021-10-11T00:12:00+0300] [ALPM] transaction completed
+[2021-10-11T00:12:00+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-10-12T00:00:11+0300] [PACMAN] Running 'pacman --logfile /home/ed/.local/share/log-files/sys_pacman.log -S -y -u --noconfirm --config /etc/pacman.conf --'
+[2021-10-12T00:00:11+0300] [PACMAN] synchronizing package lists
