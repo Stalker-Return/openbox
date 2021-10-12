@@ -9,4 +9,4 @@ drives=$(lsblk -lp | grep "t /" | grep -v "$exlusionregex" | awk '{print $1, "("
 chosen=$(echo "$drives" | dmenu -i -p "Choose the Drive to umount" | awk '{print $1}')
 [[ -z $chosen ]] && exit 1
 #
-sudo umount $chosen && pgrep -x dunst && notify-send "$chosen mounted"
+sudo umount $chosen && pgrep -x dunst && notify-send "$chosen unmounted"
