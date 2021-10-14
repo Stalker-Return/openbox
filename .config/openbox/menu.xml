@@ -482,6 +482,9 @@
 			</item>
 			<separator/>
 
+			<item label="Package Updater" icon="/usr/share/icons/Papirus/24x24/apps/system-software-install.svg">
+				<action name="Execute"><execute>pamac-manager </execute></action>
+			</item>
 			<item label="System Maintenance" icon=".local/share/icons/apps/system-software-update.svg">
 				<action name="Execute"><execute>xterm -bg gray15 -fg snow -T Maintance -geometry 90x28+30+20 -e sudo sh ~/scripts/wtf.sh </execute></action>
 			</item>
