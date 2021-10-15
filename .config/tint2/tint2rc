@@ -435,10 +435,10 @@ execp_icon_h = 0
 #-------------------------------------
 # Executor 4
 execp = new
-execp_command = echo /usr/share/icons/Papirus/16x16/panel/update-high.svg; echo -e " $(checkupdates | wc -l)"
+execp_command = echo -e "\U00023F3 $(checkupdates | wc -l)"
 execp_interval = 3600
-execp_cache_icon = 1
-execp_has_icon = 1
+execp_cache_icon = 0
+execp_has_icon = 0
 execp_continuous = 0
 execp_markup = 1
 execp_monitor = all
@@ -457,7 +457,7 @@ execp_icon_w = 0
 execp_icon_h = 0
 
 #-------------------------------------
-# Executor 5
+# Executor 5: Keyboard Layout
 execp = new
 execp_command = KEYBOARD=$(xkblayout-state print '%s'); case $KEYBOARD in "us") KEYBANNER="EN 🇺🇸" ;; "ru") KEYBANNER="RU 🇷🇺" ;; "ua") KEYBANNER="UA 🇺🇦" ;; *) KEYBANNER="N/A" ;; esac; echo -e "$KEYBANNER"
 execp_interval = 1

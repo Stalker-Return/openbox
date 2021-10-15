@@ -194,7 +194,7 @@ bar {
 		status_command i3blocks -c /home/ed/.config/i3/i3blocks.conf
 #		status_command i3status -c /home/ed/.config/i3/i3status.conf
 	colors {
-		background #000030
+		background #000000
 		statusline #ffffff
 		
 		active_workspace #ffffff #ff0000
@@ -211,7 +211,7 @@ exec_always setxkbmap -option grp:switch,grp:ctrl_shift_toggle,grp_led:scroll us
 exec_always perWindowLayoutD
 
 # Set Wallpapers
-exec_always feh --no-fehbg --bg-scale '/home/ed/.local/share/wallpapers/02_programming-wallpaper.jpg'
+exec_always feh --no-fehbg --bg-scale '/home/ed/.local/share/wallpapers/01_kiss.jpg'
 
 # Make dirs to mount usb drives
 exec_always sudo mkdir -p /run/media/ed/DATA
