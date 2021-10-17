@@ -34,8 +34,8 @@
         <ConfigPanel ScrollPos="0" SyncOverdue="7" SortByColumn="Name" SortAscending="true">
             <Configurations MaxSize="100" LastSelected="/home/ed/.config/FreeFileSync/onedrive.ffs_gui">
                 <Item Result="Stopped" Config="/home/ed/.config/FreeFileSync/LastRun.ffs_gui" LastSync="0" Log="" Color="DDDDDD"/>
-                <Item Result="Success" Config="/home/ed/.config/FreeFileSync/onedrive.ffs_gui" LastSync="1634057244" Log="/home/ed/.config/FreeFileSync/Logs/onedrive 2021-10-08 083544.735.html"/>
-                <Item Result="Success" Config="/home/ed/.config/FreeFileSync/gdrive.ffs_gui" LastSync="1634057055" Log="/home/ed/.config/FreeFileSync/Logs/gdrive 2021-10-12 194415.767.html"/>
+                <Item Result="Success" Config="/home/ed/.config/FreeFileSync/onedrive.ffs_gui" LastSync="1634373859" Log="/home/ed/.config/FreeFileSync/Logs/onedrive 2021-10-08 083544.735.html"/>
+                <Item Result="Success" Config="/home/ed/.config/FreeFileSync/gdrive.ffs_gui" LastSync="1634373851" Log="/home/ed/.config/FreeFileSync/Logs/gdrive 2021-10-16 114411.747.html"/>
             </Configurations>
             <LastUsed>
                 <Item>/home/ed/.config/FreeFileSync/onedrive.ffs_gui</Item>
@@ -88,7 +88,7 @@
     <LastOnlineVersion>11.14</LastOnlineVersion>
     <DpiLayouts>
         <Layout Scale="100%">
-            <MainDialog Width="1362" Height="729" PosX="-5" PosY="4" Maximized="false">
+            <MainDialog Width="1362" Height="729" PosX="0" PosY="4" Maximized="false">
                 <PanelLayout>layout2|name=CenterPanel;caption=;state=256;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=629;besth=48;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=TopPanel;caption=Main Bar;state=2099708;dir=1;layer=2;row=1;pos=0;prop=100000;bestw=616;besth=64;minw=170;minh=64;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ProgressPanel;caption=;state=2097662;dir=1;layer=2;row=2;pos=0;prop=100000;bestw=753;besth=111;minw=-1;minh=111;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=FoldersPanel;caption=Folder Pairs;state=2099708;dir=1;layer=2;row=3;pos=0;prop=100000;bestw=-1;besth=49;minw=-1;minh=49;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=SearchPanel;caption=Find;state=2099710;dir=3;layer=2;row=3;pos=0;prop=100000;bestw=262;besth=33;minw=100;minh=33;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=LogPanel;caption=Log;state=6293502;dir=3;layer=2;row=2;pos=0;prop=100000;bestw=600;besth=300;minw=100;minh=100;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ViewFilterPanel;caption=View Settings;state=2099708;dir=3;layer=2;row=1;pos=0;prop=100000;bestw=787;besth=55;minw=100;minh=55;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ConfigPanel;caption=Configuration;state=2099196;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=239;besth=63;minw=220;minh=63;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=OverviewPanel;caption=Overview;state=2099196;dir=4;layer=3;row=0;pos=1;prop=100000;bestw=300;besth=20;minw=100;minh=100;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=629|dock_size(1,2,1)=64|dock_size(1,2,3)=49|dock_size(3,2,1)=55|dock_size(4,3,0)=302|</PanelLayout>
                 <ConfigPanel>
                     <Item Type="Name" Visible="true" Width="-117" Stretch="1"/>

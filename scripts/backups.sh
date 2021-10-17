@@ -13,5 +13,5 @@ function savefiles() {
 			rsync -ar --delete $filename "/run/media/ed/DATA/Storage/Linux"
 		done < $backup_list
 }
-echo -ne "Backup in progress... "
+echo -ne "\033[5mBackup in progress... \e[0m"
 savefiles

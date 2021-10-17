@@ -495,3 +495,6 @@
 [2021-10-15T00:04:51+0300] [ALPM] running 'update-mime-database.hook'...
 [2021-10-16T00:00:24+0300] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
 [2021-10-16T00:00:24+0300] [PACMAN] synchronizing package lists
+[2021-10-16T00:00:29+0300] [PACMAN] starting full system upgrade
+[2021-10-17T08:17:39+0300] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2021-10-17T08:17:39+0300] [PACMAN] synchronizing package lists

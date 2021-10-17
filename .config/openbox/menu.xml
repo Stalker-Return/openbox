@@ -489,7 +489,7 @@
 				<action name="Execute"><execute>xterm -bg gray15 -fg snow -T Maintance -geometry 90x28+30+20 -e sudo sh ~/scripts/wtf.sh </execute></action>
 			</item>
 			<item label="System backups" icon=".local/share/icons/apps/kbackup.svg">
-				<action name="Execute"><execute>xterm -bg red -fg black -T BackUp -geometry 60x4+0+0 -e 'sudo sh ~/scripts/spinner.sh ~/scripts/backups.sh' </execute></action>
+				<action name="Execute"><execute>xterm -bg gray10 -fg green -T BackUp -geometry 60x4+1001+687 -e 'sudo sh ~/scripts/spinner.sh ~/scripts/backups.sh' </execute></action>
 			</item>
 			<item label="System full update" icon=".local/share/icons/apps/update-manager.svg">
 				<action name="Execute"><execute>xterm -bg red -fg black -T SYS_Update -geometry 110x3+701+700 -e sh ~/bin/sys_update.sh </execute></action>

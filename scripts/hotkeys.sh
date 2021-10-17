@@ -28,10 +28,10 @@ function table_key() {
 	echo -e " | Super+s" "\t" "| System Info" "\t" "\t"		"| Ctrl+Alt+p" "\t" "| coPy frame" "\t" "\t" "|"
 	echo -e " | Super+f" "\t" "| wtF script" "\t" "\t"		"| Ctrl+Alt+w" "\t" "| copy Window" "\t" "\t" "|"
 	echo -e " | Super+n" "\t" "| recoNfigure openbox""\t"		"| Ctrl+Alt+s" "\t" "| copy Screen" "\t" "\t" "|"
-	echo -e " | Super+a" "\t" "| fAvorites-menu" "\t"	"| Ctrl+Alt+Del " "| Shutdown now" "\t" "|"
-	echo -e " | Super+q" "\t" "| Quit the session" "\t"		"| Shift+Alt+2  " "| tint1 bottom" "\t" "|"
+	echo -e " | Super+a" "\t" "| fAvorites-menu" "\t"	"| Ctrl+Alt+m   " "| Mount usb drivers" "\t" "|"
+	echo -e " | Super+q" "\t" "| Quit the session" "\t"		"| Ctrl+Alt+u   " "| Unmount usb drivers" "\t" "|"
 	echo -e " | Super+e" "\t" "| sEtting menu" "\t"		"| Shift+Alt+2  " "| tint2 left" "\t" "\t" "|"
-	echo -e " | Super+u" "\t" "| tools menU" "\t" "\t"		"| Shift+Alt+2  " "| tint3 top" "\t" "\t" "|"
+	echo -e " | Super+u" "\t" "| tools menU" "\t" "\t"		"| Shift+Alt+3  " "| tint3 top" "\t" "\t" "|"
 	echo -e " |---------------------------------------|---------------------------------------|"
 }
 

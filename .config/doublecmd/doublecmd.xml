@@ -264,8 +264,8 @@
   </Toolbars>
   <MainWindow>
     <Position Save="True">
-      <Left>68</Left>
-      <Top>30</Top>
+      <Left>136</Left>
+      <Top>33</Top>
       <Width>1059</Width>
       <Height>577</Height>
       <PixelsPerInch>96</PixelsPerInch>
@@ -340,7 +340,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/.config/systemd/user/</Path>
+                  <Path>/home/ed/bin/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -406,7 +406,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/Clouds/Dropbox/BackUps/Linux/install/stable/</Path>
+                  <Path>/home/ed/</Path>
                 </Paths>
               </Entry>
             </History>
