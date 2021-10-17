@@ -264,8 +264,8 @@
   </Toolbars>
   <MainWindow>
     <Position Save="True">
-      <Left>136</Left>
-      <Top>33</Top>
+      <Left>118</Left>
+      <Top>35</Top>
       <Width>1059</Width>
       <Height>577</Height>
       <PixelsPerInch>96</PixelsPerInch>
@@ -340,7 +340,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/bin/</Path>
+                  <Path>/home/ed/Clouds/Dropbox/BackUps/Linux/install/stable/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -398,15 +398,15 @@
           <FileView Type="columns">
             <Sortings>
               <Sorting>
-                <Direction>2</Direction>
-                <Function>7</Function>
+                <Direction>1</Direction>
+                <Function>12</Function>
               </Sorting>
             </Sortings>
             <History>
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/</Path>
+                  <Path>/usr/lib/systemd/system/</Path>
                 </Paths>
               </Entry>
             </History>

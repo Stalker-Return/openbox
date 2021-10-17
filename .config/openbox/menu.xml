@@ -432,6 +432,9 @@
 			<item label="FreeFileSync" icon=".local/share/icons/apps/freefilesync.svg">
 				<action name="Execute"><execute>/opt/FreeFileSync/FreeFileSync </execute></action>
 			</item>
+			<item label="PyChess" icon=".local/share/icons/apps/pychess.png">
+				<action name="Execute"><execute>env UBUNTU_MENUPROXY= pychess </execute></action>
+			</item>
 			<item label="Galculator" icon=".local/share/icons/apps/gnome-calculator.svg">
 				<action name="Execute"><execute>galculator </execute></action>
 			</item>

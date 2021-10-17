@@ -1,19 +1,26 @@
 #!/bin/bash
-#
-# External source
-source /home/ed/scripts/external_func.sh
-#
-( echo "y"; echo "y"; echo "y" ) | yay -Scc
-exitcode=$?
-exitcontrol
-#
-# log-file record
-echo "Package cache has cleaned: $(date), exit code = $exitcode, $codedescription" >> $HOME/.local/share/log-files/pac_cache.log
-#
+# Upload external functions
+	checkfile=/home/ed/scripts/external_func.sh
+	[[ ! -f $checkfile ]] && echo -e "File $(basename -- "$checkfile") does not exist. Press any key to continue." && read -rsn1 && exit 5 || source $checkfile;
+# Clean the package cache
+function packagecache() {
+	( echo "y"; echo "y"; echo "y" ) | yay -Scc
+	exitcode=$?
+	exitcontrol
+}
 # Send notification
-case $exitcode in
- 0 ) notify-send --urgency=normal --expire-time=3000 "Package cache has cleaned" ;;
- * ) notify-send --urgency=critical --expire-time=5000 "Package cache cleaner error: $codedescription" ;;
-esac
+function notifynownow() {
+	iconerr=/home/ed/.local/share/icons/status/dialog-warning.svg
+	iconst=/home/ed/.local/share/icons/status/trophy-gold.svg
+
+	echo "Exit code = $exitcode | $codedescription | $(date) | Package cache has cleaned." \
+	>> $HOME/.local/share/log-files/pac_cache.log
+
+	case $exitcode in
+	 0)	notify-send -u normal -t 3000 'Package cache has cleaned' 'Result: SUCCESS' -i $iconst && exit 0 ;;
+	 *)	notify-send -u critical -t 3000 'Clean the Package Cache' 'Result: ERROR' -i $iconerr && exit 1 ;;
+	esac
+}
 #
-exit
+packagecache
+notifynownow
