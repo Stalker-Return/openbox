@@ -10,21 +10,18 @@ summctrl=0
 /usr/bin/git --git-dir=$HOME/.git/tools/ --work-tree=$HOME/Clouds/Dropbox/BackUps/Linux/ add .
 exitcode=$?
 exitcontrol
-codedescription1=$codedescription
 exitcode1=$exitcode
 summctrl=$(expr $summctrl + $exitcode1)
 # GIT COMMIT
 /usr/bin/git --git-dir=$HOME/.git/tools/ --work-tree=$HOME/Clouds/Dropbox/BackUps/Linux/ commit -m "Regular Update"
 exitcode=$?
 exitcontrol
-codedescription2=$codedescription
 exitcode2=$exitcode
 summctrl=$(expr $summctrl + $exitcode2)
 # GIT PUSH
 /usr/bin/git --git-dir=$HOME/.git/tools/ --work-tree=$HOME/Clouds/Dropbox/BackUps/Linux/ push -u
 exitcode=$?
 exitcontrol
-codedescription3=$codedescription
 exitcode3=$exitcode
 summctrl=$(expr $summctrl + $exitcode3)
 }
@@ -33,8 +30,10 @@ summctrl=$(expr $summctrl + $exitcode3)
 function notifynownow() {
 	iconerr=/home/ed/.local/share/icons/status/dialog-warning.svg
 	iconst=/home/ed/.local/share/icons/status/trophy-gold.svg
+	
+	[[ "$summctrl" -eq 0 ]] && codedescription="Success" || codedescription="Error"
 
-	echo "Github tools has updated: $(date), exit codes:$exitcode1:$exitcode2:$exitcode3" \
+	echo "Exit codes:$exitcode1:$exitcode2:$exitcode3 | $codedescription | $(date) | Github tools has updated." \
 	>> $HOME/.local/share/log-files/github_tools.log
 
 	case $summctrl in

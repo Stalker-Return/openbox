@@ -17,21 +17,18 @@ summctrl=0
 .config/Thunar/ .config/FreeFileSync/ .config/nyxt/ .config/conky/ .config/i3/ .config/ranger/
 exitcode=$?
 exitcontrol
-codedescription1=$codedescription
 exitcode1=$exitcode
 summctrl=$(expr $summctrl + $exitcode1)
 # GIT COMMIT
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit -m "Dayly upload"
 exitcode=$?
 exitcontrol
-codedescription2=$codedescription
 exitcode2=$exitcode
 summctrl=$(expr $summctrl + $exitcode2)
 # GIT PUSH
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME push -u
 exitcode=$?
 exitcontrol
-codedescription3=$codedescription
 exitcode3=$exitcode
 summctrl=$(expr $summctrl + $exitcode3)
 }
@@ -40,8 +37,10 @@ summctrl=$(expr $summctrl + $exitcode3)
 function notifynownow() {
 	iconerr=/home/ed/.local/share/icons/status/dialog-warning.svg
 	iconst=/home/ed/.local/share/icons/status/trophy-gold.svg
-
-	echo "Github .dotfiles has updated: $(date), exit codes:$exitcode1:$exitcode2:$exitcode3" \
+	
+	[[ "$summctrl" -eq 0 ]] && codedescription="Success" || codedescription="Error"
+	
+	echo "Exit codes:$exitcode1:$exitcode2:$exitcode3 | $codedescription | $(date) | Github .dotfiles has updated." \
 	>> $HOME/.local/share/log-files/github_dots.log
 
 	case $summctrl in
