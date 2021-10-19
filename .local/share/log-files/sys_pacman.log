@@ -16,3 +16,14 @@
 [2021-10-18T08:48:29+0300] [ALPM] running '30-systemd-update.hook'...
 [2021-10-19T07:49:38+0300] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
 [2021-10-19T07:49:38+0300] [PACMAN] synchronizing package lists
+[2021-10-19T07:49:41+0300] [PACMAN] starting full system upgrade
+[2021-10-19T07:50:22+0300] [ALPM] transaction started
+[2021-10-19T07:50:23+0300] [ALPM] upgraded mesa (21.2.3-1 -> 21.2.4-1)
+[2021-10-19T07:50:34+0300] [ALPM] upgraded doublecmd-qt5 (0.9.10-3 -> 1.0.0-1)
+[2021-10-19T07:50:35+0300] [ALPM] upgraded qt5-declarative (5.15.2+kde+r33-1 -> 5.15.2+kde+r34-1)
+[2021-10-19T07:50:36+0300] [ALPM] transaction completed
+[2021-10-19T07:50:36+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-10-19T07:50:36+0300] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2021-10-19T07:50:37+0300] [ALPM] running 'update-desktop-database.hook'...
+[2021-10-20T00:00:04+0300] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2021-10-20T00:00:04+0300] [PACMAN] synchronizing package lists

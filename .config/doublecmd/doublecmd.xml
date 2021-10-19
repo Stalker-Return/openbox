@@ -261,6 +261,43 @@
         </Program>
       </Row>
     </MainToolbar>
+    <MiddleToolbar>
+      <Row>
+        <Command>
+          <ID>{407EF7EB-3C2E-49AB-9582-72B441E01DE1}</ID>
+          <Icon>cm_view</Icon>
+          <Command>cm_View</Command>
+        </Command>
+        <Command>
+          <ID>{3A31EF3D-E788-4BAB-8AFD-0420E5649331}</ID>
+          <Icon>cm_edit</Icon>
+          <Command>cm_Edit</Command>
+        </Command>
+        <Command>
+          <ID>{31F8892A-23F7-43F6-9D81-AB151B05FC33}</ID>
+          <Icon>cm_copy</Icon>
+          <Command>cm_Copy</Command>
+        </Command>
+        <Command>
+          <ID>{A301D3DA-F3D5-4B34-9DEA-E537C4E7EAB9}</ID>
+          <Icon>cm_rename</Icon>
+          <Command>cm_Rename</Command>
+        </Command>
+        <Separator>
+          <Style>True</Style>
+        </Separator>
+        <Command>
+          <ID>{1473A5B3-59AB-42D2-B1AA-0B83DC34095C}</ID>
+          <Icon>cm_packfiles</Icon>
+          <Command>cm_PackFiles</Command>
+        </Command>
+        <Command>
+          <ID>{0339142E-1FA0-40C3-A65E-15B9CBD890F2}</ID>
+          <Icon>cm_makedir</Icon>
+          <Command>cm_MakeDir</Command>
+        </Command>
+      </Row>
+    </MiddleToolbar>
   </Toolbars>
   <MainWindow>
     <Position Save="True">
@@ -269,7 +306,7 @@
       <Width>1059</Width>
       <Height>577</Height>
       <PixelsPerInch>96</PixelsPerInch>
-      <Maximized>True</Maximized>
+      <Maximized>False</Maximized>
       <Splitter>50</Splitter>
     </Position>
   </MainWindow>
