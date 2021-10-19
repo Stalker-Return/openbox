@@ -1,3 +1,18 @@
 [2021-10-18T00:14:29+0300] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
 [2021-10-18T00:14:29+0300] [PACMAN] synchronizing package lists
 [2021-10-18T00:14:34+0300] [PACMAN] starting full system upgrade
+[2021-10-18T00:15:06+0300] [ALPM] transaction started
+[2021-10-18T00:15:07+0300] [ALPM] upgraded xscreensaver (6.01-1 -> 6.02-1)
+[2021-10-18T00:15:07+0300] [ALPM] transaction completed
+[2021-10-18T00:15:07+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-10-18T00:15:08+0300] [ALPM] running 'fontconfig.hook'...
+[2021-10-18T00:15:08+0300] [ALPM] running 'update-desktop-database.hook'...
+[2021-10-18T08:48:08+0300] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2021-10-18T08:48:08+0300] [PACMAN] synchronizing package lists
+[2021-10-18T08:48:11+0300] [PACMAN] starting full system upgrade
+[2021-10-18T08:48:29+0300] [ALPM] transaction started
+[2021-10-18T08:48:29+0300] [ALPM] upgraded aom (3.1.3-2 -> 3.2.0-1)
+[2021-10-18T08:48:29+0300] [ALPM] transaction completed
+[2021-10-18T08:48:29+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-10-19T07:49:38+0300] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2021-10-19T07:49:38+0300] [PACMAN] synchronizing package lists

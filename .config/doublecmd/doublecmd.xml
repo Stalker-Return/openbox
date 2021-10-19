@@ -269,7 +269,7 @@
       <Width>1059</Width>
       <Height>577</Height>
       <PixelsPerInch>96</PixelsPerInch>
-      <Maximized>False</Maximized>
+      <Maximized>True</Maximized>
       <Splitter>50</Splitter>
     </Position>
   </MainWindow>
@@ -340,7 +340,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/Clouds/Dropbox/BackUps/Linux/install/stable/</Path>
+                  <Path>/home/ed/.local/share/log-files/</Path>
                 </Paths>
               </Entry>
             </History>
