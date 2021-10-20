@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<doublecmd DCVersion="0.9.10 beta" ConfigVersion="10">
+<doublecmd DCVersion="1.0.0 beta" ConfigVersion="12">
   <Toolbars>
     <MainToolbar>
       <Row>
@@ -23,7 +23,9 @@
           <Icon>cm_thumbnailsview</Icon>
           <Command>cm_ThumbnailsView</Command>
         </Command>
-        <Separator/>
+        <Separator>
+          <Style>False</Style>
+        </Separator>
         <Command>
           <ID>{03D946DF-DB2F-4BE5-84FA-2CBFA6F2E0E3}</ID>
           <Icon>cm_flatview</Icon>
@@ -39,7 +41,9 @@
           <Icon>cm_viewhistorynext</Icon>
           <Command>cm_ViewHistoryNext</Command>
         </Command>
-        <Separator/>
+        <Separator>
+          <Style>False</Style>
+        </Separator>
         <Command>
           <ID>{D435E780-3F45-4E8A-B276-5A5AAFD90902}</ID>
           <Icon>cm_markplus</Icon>
@@ -55,7 +59,9 @@
           <Icon>cm_markinvert</Icon>
           <Command>cm_MarkInvert</Command>
         </Command>
-        <Separator/>
+        <Separator>
+          <Style>False</Style>
+        </Separator>
         <Command>
           <ID>{E6B0A042-22E6-4FA4-9245-478F466A9EF5}</ID>
           <Icon>cm_packfiles</Icon>
@@ -66,7 +72,9 @@
           <Icon>cm_extractfiles</Icon>
           <Command>cm_ExtractFiles</Command>
         </Command>
-        <Separator/>
+        <Separator>
+          <Style>False</Style>
+        </Separator>
         <Command>
           <ID>{9543BF70-4CF2-4267-8672-2D8A535CBBA1}</ID>
           <Icon>cm_search</Icon>
@@ -82,7 +90,9 @@
           <Icon>cm_copyfullnamestoclip</Icon>
           <Command>cm_CopyFullNamesToClip</Command>
         </Command>
-        <Separator/>
+        <Separator>
+          <Style>False</Style>
+        </Separator>
         <Program>
           <ID>{0D0E4678-F8F0-421D-95BA-A7F5C9FD718E}</ID>
           <Icon>$HOME/.local/share/icons/apps/tint2.svg</Icon>
@@ -102,7 +112,9 @@
           <Command>pcmanfm</Command>
           <Params>--desktop-pref</Params>
         </Program>
-        <Separator/>
+        <Separator>
+          <Style>False</Style>
+        </Separator>
         <Program>
           <ID>{31773139-E61B-41EC-B2BA-0FE343FD4FF0}</ID>
           <Icon>$HOME/.local/share/icons/apps/anydesk.svg</Icon>
@@ -199,8 +211,12 @@
           <Command>keepassxc</Command>
           <Params>%f</Params>
         </Program>
-        <Separator/>
-        <Separator/>
+        <Separator>
+          <Style>False</Style>
+        </Separator>
+        <Separator>
+          <Style>False</Style>
+        </Separator>
         <Program>
           <ID>{70CE8C41-02CA-4B65-B8A2-9FECF84BACD2}</ID>
           <Icon>$HOME/.local/share/icons/apps/gweled.svg</Icon>
@@ -229,8 +245,12 @@
           <Command>geany</Command>
           <Params>$HOME/.bashrc</Params>
         </Program>
-        <Separator/>
-        <Separator/>
+        <Separator>
+          <Style>False</Style>
+        </Separator>
+        <Separator>
+          <Style>False</Style>
+        </Separator>
         <Program>
           <ID>{CF7CF1A7-CC3C-418F-A2FF-0A16FE2549ED}</ID>
           <Icon>$HOME/.local/share/icons/apps/tuxpuck.svg</Icon>
@@ -377,7 +397,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/.local/share/log-files/</Path>
+                  <Path>/run/media/ed/DATA/Storage/Linux/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -443,7 +463,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/usr/lib/systemd/system/</Path>
+                  <Path>/home/ed/DATA/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -468,6 +488,7 @@
   </Language>
   <Behaviours>
     <GoToRoot>False</GoToRoot>
+    <ShowCurDirTitleBar>False</ShowCurDirTitleBar>
     <ActiveRight>False</ActiveRight>
     <RunInTerminalStayOpenCmd>lxterminal</RunInTerminalStayOpenCmd>
     <RunInTerminalStayOpenParams>-e sh -c '{command}; echo -n Press ENTER to exit... ; read a'</RunInTerminalStayOpenParams>
@@ -479,9 +500,11 @@
     <LynxLike>True</LynxLike>
     <FileSizeFormat>0</FileSizeFormat>
     <OperationSizeFormat>0</OperationSizeFormat>
-    <HeaderFooterSizeFormat>0</HeaderFooterSizeFormat>
+    <HeaderSizeFormat>0</HeaderSizeFormat>
+    <FooterSizeFormat>0</FooterSizeFormat>
     <FileSizeDigits>1</FileSizeDigits>
-    <HeaderFooterDigits>1</HeaderFooterDigits>
+    <HeaderDigits>1</HeaderDigits>
+    <FooterDigits>1</FooterDigits>
     <OperationSizeDigits>1</OperationSizeDigits>
     <PersonalizedByte>B</PersonalizedByte>
     <PersonalizedKilo>KB</PersonalizedKilo>
@@ -568,7 +591,7 @@
     </OptionsMain>
     <SearchResults>
       <Name>default</Name>
-      <Size>14</Size>
+      <Size>9</Size>
       <Style>0</Style>
       <Quality>0</Quality>
     </SearchResults>
@@ -602,6 +625,12 @@
       <Style>0</Style>
       <Quality>0</Quality>
     </Console>
+    <TreeViewMenu>
+      <Name>default</Name>
+      <Size>10</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </TreeViewMenu>
   </Fonts>
   <Colors>
     <UseCursorBorder>True</UseCursorBorder>
@@ -662,6 +691,12 @@
         <Attributes>*d*</Attributes>
       </Filter>
     </FileFilters>
+    <PathLabel>
+      <ActiveColor>-2147483635</ActiveColor>
+      <ActiveFontColor>-2147483634</ActiveFontColor>
+      <InactiveColor>-2147483633</InactiveColor>
+      <InactiveFontColor>-2147483630</InactiveFontColor>
+    </PathLabel>
   </Colors>
   <ToolTips>
     <ShowToolTipMode>True</ShowToolTipMode>
@@ -681,8 +716,19 @@
       <FlatIcons>False</FlatIcons>
       <ButtonHeight>24</ButtonHeight>
       <IconSize>16</IconSize>
+      <ShowCaptions>False</ShowCaptions>
       <ReportErrorWithCommands>False</ReportErrorWithCommands>
+      <FilenameStyle>0</FilenameStyle>
+      <PathToBeRelativeTo>%COMMANDER_PATH%</PathToBeRelativeTo>
+      <PathModifierElements>0</PathModifierElements>
     </ButtonBar>
+    <MiddleBar Enabled="False">
+      <FlatIcons>True</FlatIcons>
+      <ButtonHeight>24</ButtonHeight>
+      <IconSize>16</IconSize>
+      <ShowCaptions>False</ShowCaptions>
+      <ReportErrorWithCommands>False</ReportErrorWithCommands>
+    </MiddleBar>
     <DriveBar1>True</DriveBar1>
     <DriveBar2>True</DriveBar2>
     <DriveBarFlat>False</DriveBarFlat>
@@ -707,6 +753,8 @@
     <PanelOfOperationsInBackground>True</PanelOfOperationsInBackground>
     <HorizontalFilePanels>False</HorizontalFilePanels>
     <ShortFormatDriveInfo>False</ShortFormatDriveInfo>
+    <UppercaseDriveLetter>False</UppercaseDriveLetter>
+    <ShowColonAfterDrive>False</ShowColonAfterDrive>
   </Layout>
   <FilesViews>
     <Sorting>
@@ -715,6 +763,7 @@
       <SortFolderMode>0</SortFolderMode>
       <NewFilesPosition>2</NewFilesPosition>
       <UpdatedFilesPosition>2</UpdatedFilesPosition>
+      <SpecialSorting>False</SpecialSorting>
     </Sorting>
     <ColumnsView>
       <AutoSaveWidth>True</AutoSaveWidth>
@@ -784,12 +833,26 @@
       <CopyOwnership>False</CopyOwnership>
       <CopyPermissions>False</CopyPermissions>
       <ExcludeEmptyTemplateDirectories>True</ExcludeEmptyTemplateDirectories>
+      <CopyOnWrite>2</CopyOnWrite>
+      <CopyXattributes>True</CopyXattributes>
     </Options>
     <Extract>
       <Overwrite>False</Overwrite>
     </Extract>
+    <LongNameAlert>True</LongNameAlert>
+    <MultiRename>
+      <MulRenShowMenuBarOnTop>True</MulRenShowMenuBarOnTop>
+      <MulRenInvalidCharReplacement>.</MulRenInvalidCharReplacement>
+      <MulRenLaunchBehavor>0</MulRenLaunchBehavor>
+      <MulRenExitModifiedPreset>0</MulRenExitModifiedPreset>
+      <MulRenSaveRenamingLog>0</MulRenSaveRenamingLog>
+      <MulRenLogFilename>%DC_CONFIG_PATH%/multirename.log</MulRenLogFilename>
+      <MultRenDailyIndividualDirLog>True</MultRenDailyIndividualDirLog>
+      <MulRenFilenameWithFullPathInLog>False</MulRenFilenameWithFullPathInLog>
+      <MulRenPathRangeSeparator>- </MulRenPathRangeSeparator>
+    </MultiRename>
   </FileOperations>
-  <Log Enabled="False" LogFileWithDateInName="False">
+  <Log Enabled="False" LogFileWithDateInName="False" Count="0">
     <FileName>%DC_CONFIG_PATH%/doublecmd.log</FileName>
     <Options>1023</Options>
   </Log>
@@ -823,6 +886,9 @@
     <ShowPathInPopup>False</ShowPathInPopup>
     <ShowOnlyValidEnv>True</ShowOnlyValidEnv>
     <WhereToAddNewHotDir>2</WhereToAddNewHotDir>
+    <FilenameStyle>0</FilenameStyle>
+    <PathToBeRelativeTo>%COMMANDER_PATH%</PathToBeRelativeTo>
+    <PathModifierElements>0</PathModifierElements>
   </Miscellaneous>
   <Thumbnails Save="True">
     <Width>128</Width>
@@ -854,6 +920,7 @@
       <Size>16</Size>
     </ShowInMenus>
     <ShowButtonGlyphs>0</ShowButtonGlyphs>
+    <ToolSize>24</ToolSize>
   </Icons>
   <IgnoreList Enabled="False">
     <IgnoreListFile>%DC_CONFIG_PATH%/ignorelist.txt</IgnoreListFile>
@@ -917,18 +984,29 @@
     <BackgroundColor>0</BackgroundColor>
     <FontColor>16777215</FontColor>
     <TextPosition>0</TextPosition>
+    <PrintMargins>200|200|200|200</PrintMargins>
+    <ShowCaret>False</ShowCaret>
   </Viewer>
   <Editor>
     <EditWaitTime>2000</EditWaitTime>
     <SynEditOptions>856075</SynEditOptions>
     <SynEditTabWidth>8</SynEditTabWidth>
+    <SynEditRightEdge>80</SynEditRightEdge>
   </Editor>
   <Differ>
     <Colors>
       <Added>11206570</Added>
       <Deleted>11184895</Deleted>
       <Modified>16755370</Modified>
+      <Binary>
+        <Modified>255</Modified>
+      </Binary>
     </Colors>
+    <IgnoreCase>False</IgnoreCase>
+    <KeepScrolling>True</KeepScrolling>
+    <PaintBackground>True</PaintBackground>
+    <LineDifferences>False</LineDifferences>
+    <IgnoreWhiteSpace>False</IgnoreWhiteSpace>
   </Differ>
   <SyncDirs>
     <Subdirs>True</Subdirs>
@@ -942,6 +1020,11 @@
     <FilterDuplicates>False</FilterDuplicates>
     <FilterSingles>True</FilterSingles>
     <FileMask>*</FileMask>
+    <Colors>
+      <Left>32768</Left>
+      <Right>16711680</Right>
+      <Unknown>255</Unknown>
+    </Colors>
   </SyncDirs>
   <InternalAssociations>
     <OfferToAddNewFileType>True</OfferToAddNewFileType>
@@ -951,6 +1034,9 @@
     <OpenSystemWithTerminalClose>False</OpenSystemWithTerminalClose>
     <OpenSystemWithTerminalStayOpen>False</OpenSystemWithTerminalStayOpen>
     <IncludeFileAssociation>False</IncludeFileAssociation>
+    <FilenameStyle>0</FilenameStyle>
+    <PathToBeRelativeTo>%COMMANDER_PATH%</PathToBeRelativeTo>
+    <PathModifierElements>0</PathModifierElements>
   </InternalAssociations>
   <TreeViewMenu>
     <UseTVMDirectoryHotlistFMC>False</UseTVMDirectoryHotlistFMC>
@@ -1249,7 +1335,12 @@
       <WcxPlugin Enabled="True">
         <ArchiveExt>rar</ArchiveExt>
         <Path>%commander_path%/plugins/wcx/unrar/unrar.wcx</Path>
-        <Flags>68</Flags>
+        <Flags>607</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>zst</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>91</Flags>
       </WcxPlugin>
     </WcxPlugins>
     <WdxPlugins>
