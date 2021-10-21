@@ -34,7 +34,7 @@
         <ConfigPanel ScrollPos="0" SyncOverdue="7" SortByColumn="Name" SortAscending="true">
             <Configurations MaxSize="100" LastSelected="/home/ed/.config/FreeFileSync/onedrive.ffs_gui">
                 <Item Result="Stopped" Config="/home/ed/.config/FreeFileSync/LastRun.ffs_gui" LastSync="0" Log="" Color="DDDDDD"/>
-                <Item Result="Success" Config="/home/ed/.config/FreeFileSync/gdrive.ffs_gui" LastSync="1634575016" Log="/home/ed/.config/FreeFileSync/Logs/gdrive 2021-10-18 193656.534.html"/>
+                <Item Result="Success" Config="/home/ed/.config/FreeFileSync/gdrive.ffs_gui" LastSync="1634849222" Log="/home/ed/.config/FreeFileSync/Logs/gdrive 2021-10-21 234702.634.html"/>
                 <Item Result="Success" Config="/home/ed/.config/FreeFileSync/onedrive.ffs_gui" LastSync="1634373859" Log="/home/ed/.config/FreeFileSync/Logs/onedrive 2021-10-08 083544.735.html"/>
             </Configurations>
             <LastUsed>
@@ -84,7 +84,7 @@
         <Item Label="Browse directory">xdg-open "$(dirname "%local_path%")"</Item>
         <Item Label="Open with default application">xdg-open "%local_path%"</Item>
     </ExternalApps>
-    <LastOnlineCheck>1634057154</LastOnlineCheck>
+    <LastOnlineCheck>1634848778</LastOnlineCheck>
     <LastOnlineVersion>11.14</LastOnlineVersion>
     <DpiLayouts>
         <Layout Scale="100%">
