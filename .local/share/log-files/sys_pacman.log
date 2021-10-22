@@ -110,3 +110,53 @@
 [2021-10-21T00:04:36+0300] [ALPM] running 'update-desktop-database.hook'...
 [2021-10-22T00:00:49+0300] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
 [2021-10-22T00:00:49+0300] [PACMAN] synchronizing package lists
+[2021-10-22T00:00:54+0300] [PACMAN] starting full system upgrade
+[2021-10-22T00:03:00+0300] [ALPM] running '60-mkinitcpio-remove.hook'...
+[2021-10-22T00:03:00+0300] [ALPM] transaction started
+[2021-10-22T00:03:00+0300] [ALPM] upgraded libyuv (r2212+dfaf7534-2 -> r2266+eb6e7bb6-1)
+[2021-10-22T00:03:01+0300] [ALPM] upgraded libavif (0.9.2-1 -> 0.9.3-1)
+[2021-10-22T00:03:01+0300] [ALPM] upgraded gd (2.3.3-2 -> 2.3.3-3)
+[2021-10-22T00:03:01+0300] [ALPM] upgraded libcaca (0.99.beta19-5 -> 0.99.beta20-1)
+[2021-10-22T00:03:01+0300] [ALPM] upgraded libinput (1.19.1-1 -> 1.19.2-1)
+[2021-10-22T00:03:34+0300] [ALPM] upgraded linux (5.14.13.arch1-1 -> 5.14.14.arch1-1)
+[2021-10-22T00:04:04+0300] [ALPM] upgraded linux-headers (5.14.13.arch1-1 -> 5.14.14.arch1-1)
+[2021-10-22T00:04:10+0300] [ALPM] upgraded qt5-base (5.15.2+kde+r247-1 -> 5.15.2+kde+r251-1)
+[2021-10-22T00:04:13+0300] [ALPM] upgraded qt5-declarative (5.15.2+kde+r34-1 -> 5.15.2+kde+r36-1)
+[2021-10-22T00:04:15+0300] [ALPM] transaction completed
+[2021-10-22T00:04:21+0300] [ALPM] running '30-systemd-udev-reload.hook'...
+[2021-10-22T00:04:21+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-10-22T00:04:22+0300] [ALPM] running '60-depmod.hook'...
+[2021-10-22T00:04:53+0300] [ALPM] running '90-mkinitcpio-install.hook'...
+[2021-10-22T00:04:53+0300] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+[2021-10-22T00:04:53+0300] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux.img
+[2021-10-22T00:04:53+0300] [ALPM-SCRIPTLET] ==> Starting build: 5.14.14-arch1-1
+[2021-10-22T00:04:54+0300] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2021-10-22T00:04:57+0300] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2021-10-22T00:04:58+0300] [ALPM-SCRIPTLET]   -> Running build hook: [autodetect]
+[2021-10-22T00:04:59+0300] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2021-10-22T00:04:59+0300] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2021-10-22T00:05:06+0300] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2021-10-22T00:05:08+0300] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2021-10-22T00:05:10+0300] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2021-10-22T00:05:10+0300] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2021-10-22T00:05:11+0300] [ALPM-SCRIPTLET] ==> Creating zstd-compressed initcpio image: /boot/initramfs-linux.img
+[2021-10-22T00:05:17+0300] [ALPM-SCRIPTLET] ==> Image generation successful
+[2021-10-22T00:05:17+0300] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'fallback'
+[2021-10-22T00:05:17+0300] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux-fallback.img -S autodetect
+[2021-10-22T00:05:18+0300] [ALPM-SCRIPTLET] ==> Starting build: 5.14.14-arch1-1
+[2021-10-22T00:05:18+0300] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2021-10-22T00:05:20+0300] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2021-10-22T00:05:21+0300] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2021-10-22T00:05:21+0300] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2021-10-22T00:05:33+0300] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: aic94xx
+[2021-10-22T00:05:34+0300] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: wd719x
+[2021-10-22T00:05:41+0300] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: xhci_pci
+[2021-10-22T00:05:50+0300] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2021-10-22T00:05:57+0300] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2021-10-22T00:06:08+0300] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2021-10-22T00:06:10+0300] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2021-10-22T00:06:13+0300] [ALPM-SCRIPTLET] ==> Creating zstd-compressed initcpio image: /boot/initramfs-linux-fallback.img
+[2021-10-22T00:06:22+0300] [ALPM-SCRIPTLET] ==> Image generation successful
+[2021-10-22T00:06:22+0300] [ALPM] running 'gdk-pixbuf-query-loaders.hook'...
+[2021-10-23T00:13:32+0300] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2021-10-23T00:13:32+0300] [PACMAN] synchronizing package lists

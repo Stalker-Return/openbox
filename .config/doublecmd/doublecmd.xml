@@ -397,7 +397,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/run/media/ed/DATA/Storage/Linux/</Path>
+                  <Path>/home/ed/Clouds/Bureau/Transit/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -455,15 +455,15 @@
           <FileView Type="columns">
             <Sortings>
               <Sorting>
-                <Direction>1</Direction>
-                <Function>12</Function>
+                <Direction>2</Direction>
+                <Function>7</Function>
               </Sorting>
             </Sortings>
             <History>
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/DATA/</Path>
+                  <Path>/home/ed/Documents/</Path>
                 </Paths>
               </Entry>
             </History>
