@@ -164,3 +164,10 @@
 [2021-10-25T08:12:51+0300] [PACMAN] synchronizing package lists
 [2021-10-26T18:29:49+0300] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
 [2021-10-26T18:29:49+0300] [PACMAN] synchronizing package lists
+[2021-10-26T21:21:35+0300] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2021-10-26T21:21:35+0300] [PACMAN] synchronizing package lists
+[2021-10-26T21:23:48+0300] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2021-10-26T21:23:48+0300] [PACMAN] synchronizing package lists
+[2021-10-26T21:39:13+0300] [PACMAN] starting full system upgrade
+[2021-10-27T08:39:06+0300] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2021-10-27T08:39:06+0300] [PACMAN] synchronizing package lists
