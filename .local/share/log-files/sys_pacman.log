@@ -171,3 +171,10 @@
 [2021-10-26T21:39:13+0300] [PACMAN] starting full system upgrade
 [2021-10-27T08:39:06+0300] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
 [2021-10-27T08:39:06+0300] [PACMAN] synchronizing package lists
+[2021-10-27T08:45:29+0300] [PACMAN] starting full system upgrade
+[2021-10-27T08:48:54+0300] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2021-10-27T08:48:54+0300] [PACMAN] synchronizing package lists
+[2021-10-27T08:48:57+0300] [PACMAN] starting full system upgrade
+[2021-10-27T09:05:01+0300] [ALPM] warning: lock file missing /var/lib/pacman/db.lck
+[2021-10-28T07:53:25+0300] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2021-10-28T07:53:25+0300] [PACMAN] synchronizing package lists
