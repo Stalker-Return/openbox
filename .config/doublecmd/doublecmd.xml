@@ -397,7 +397,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/run/media/ed/usb1/</Path>
+                  <Path>/home/ed/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -463,7 +463,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/Downloads/</Path>
+                  <Path>/home/ed/Clouds/gDrive/Photos/</Path>
                 </Paths>
               </Entry>
             </History>
