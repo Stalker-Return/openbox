@@ -488,7 +488,7 @@
 			<item label="Package Updater" icon="/usr/share/icons/Papirus/24x24/apps/system-software-install.svg">
 				<action name="Execute"><execute>pamac-manager </execute></action>
 			</item>
-			<item label="System Maintenance" icon=".local/share/icons/apps/system-software-update.svg">
+			<item label="System Maintenance" icon=".local/share/icons/apps/preferences-system.svg">
 				<action name="Execute"><execute>xterm -bg gray15 -fg snow -T Maintance -geometry 90x28+30+20 -e sudo sh ~/scripts/wtf.sh </execute></action>
 			</item>
 			<item label="System backups" icon=".local/share/icons/apps/kbackup.svg">
@@ -496,6 +496,9 @@
 			</item>
 			<item label="System full update" icon=".local/share/icons/apps/update-manager.svg">
 				<action name="Execute"><execute>xterm -bg red -fg black -T SYS_Update -geometry 110x3+701+700 -e sh ~/bin/sys_update.sh </execute></action>
+			</item>
+			<item label="AUR update" icon=".local/share/icons/apps/system-software-update.svg">
+				<action name="Execute"><execute>xterm -bg red -fg black -T SYS_Update -geometry 110x3+701+700 -e sh ~/bin/aur_update.sh </execute></action>
 			</item>
 			<item label="Disk usage analyzer" icon=".local/share/icons/apps/disk-usage-analyzer.svg">
 				<action name="Execute"><execute>xterm -bg blue -fg white -T Disk_Usage -geometry 60x57+1+0 -e ncdu </execute></action>
