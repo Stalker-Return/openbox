@@ -250,7 +250,7 @@
         <menu>system-settings-menu</menu>
         <position>
           <x>1</x>
-          <y>396</y>
+          <y>1</y>
           <monitor>1</monitor>
         </position>
       </action>
@@ -261,7 +261,7 @@
         <menu>system-tools-menu</menu>
         <position>
           <x>1</x>
-          <y>396</y>
+          <y>1</y>
           <monitor>1</monitor>
         </position>
       </action>
