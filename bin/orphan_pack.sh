@@ -1,7 +1,7 @@
 #!/bin/bash
-# External source
-checkfile=/home/ed/scripts/external_func.sh
-[[ ! -f $checkfile ]] && echo -e "File $(basename -- "$checkfile") does not exist. Press any key to continue." && read -rsn1 && exit 5 || source $checkfile;
+# Upload external functions
+	checkfile=/home/ed/scripts/external_func.sh
+	[[ ! -f $checkfile ]] && echo -e "File $(basename -- "$checkfile") does not exist. Press any key to continue." && read -rsn1 && exit 5 || source $checkfile;
 # Clean orphan packages
 function cleanorphan() {
 	sudo pacman -Rns --noconfirm $(pacman -Qtdq)
@@ -13,7 +13,7 @@ function notifynownow() {
 	iconerr=/home/ed/.local/share/icons/status/dialog-warning.svg
 	iconst=/home/ed/.local/share/icons/status/trophy-gold.svg
 
-	echo "Orphan packages has cleaned: $(date), exit code = $exitcode, $codedescription" \
+	echo "Exit code = $exitcode | $codedescription | $(date) | Orphan packages has cleaned." \
 	>> $HOME/.local/share/log-files/orphan_pac.log
 
 	case $exitcode in
@@ -26,7 +26,7 @@ function notifynowempty() {
 	iconerr=/home/ed/.local/share/icons/status/dialog-warning.svg
 	iconst=/home/ed/.local/share/icons/status/trophy-gold.svg
 
-	echo "Orphan Packages have not found: $(date), exit code = $exitcode, $codedescription" \
+	echo "Exit code = $exitcode | $codedescription | $(date) | Orphan Packages have not found." \
 	>> $HOME/.local/share/log-files/orphan_pac.log
 
 	case $exitcode in

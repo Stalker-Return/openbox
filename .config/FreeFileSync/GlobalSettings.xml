@@ -34,8 +34,8 @@
         <ConfigPanel ScrollPos="0" SyncOverdue="7" SortByColumn="Name" SortAscending="true">
             <Configurations MaxSize="100" LastSelected="/home/ed/.config/FreeFileSync/onedrive.ffs_gui">
                 <Item Result="Stopped" Config="/home/ed/.config/FreeFileSync/LastRun.ffs_gui" LastSync="0" Log="" Color="DDDDDD"/>
-                <Item Result="Success" Config="/home/ed/.config/FreeFileSync/onedrive.ffs_gui" LastSync="1635588503" Log="/home/ed/.config/FreeFileSync/Logs/onedrive 2021-10-08 083544.735.html"/>
-                <Item Result="Success" Config="/home/ed/.config/FreeFileSync/gdrive.ffs_gui" LastSync="1635587658" Log="/home/ed/.config/FreeFileSync/Logs/gdrive 2021-10-30 125418.206.html"/>
+                <Item Result="Success" Config="/home/ed/.config/FreeFileSync/onedrive.ffs_gui" LastSync="1635791628" Log="/home/ed/.config/FreeFileSync/Logs/onedrive 2021-11-01 213348.449.html"/>
+                <Item Result="Success" Config="/home/ed/.config/FreeFileSync/gdrive.ffs_gui" LastSync="1635791587" Log="/home/ed/.config/FreeFileSync/Logs/gdrive 2021-11-01 213307.417.html"/>
             </Configurations>
             <LastUsed>
                 <Item>/home/ed/.config/FreeFileSync/onedrive.ffs_gui</Item>
