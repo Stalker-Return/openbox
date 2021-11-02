@@ -14,102 +14,39 @@ function usage()
 }
 #1 Ful system information
 inxifull () {
-clear
-echo -e "\e[1;15mOption 1: Ful system information\e[0m"
-echo -e "\n"
-inxi -c 7 -F
-echo -e "\n"
-read -rsn1 -p "Press any key to exit... "; echo
+xterm -bg gray12 -fg snow -T Battery -geometry 85x53+200+35 -e 'tput civis; echo -e "\e[1;15mOption 1: Ful system information\e[0m"; echo -e "\n"; inxi -c 7 -F; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo'
 }
 #2 Basic system information
 inxibasic () {
-clear
-echo -e "Option 2: Basic system information"
-echo -e "\n"
-inxi -c 7 --basic
-echo -e "\n"
-read -rsn1 -p "Press any key to exit... "; echo
+xterm -bg gray12 -fg snow -T Battery -geometry 85x35+200+100 -e 'tput civis; echo -e "\e[1;15mOption 2: Basic system information\e[0m"; echo -e "\n"; inxi -c 7 --basic; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo'
 }
 #3 Processes
 inxiproc () {
-clear
-echo -e "\e[1;15mOption 3: Processes\e[0m"
-echo -e "\n"
-inxi -c 7 -t cm10 -pu
-echo -e "\n"
-read -rsn1 -p "Press any key to exit... "; echo
-}
-#C CPU information
-inxicpu () {
-clear
-echo -e "\e[1;15mOption <C>: CPU Info\e[0m"
-echo -e "\n"
-inxi -c 7 --cpu
-echo -e "\n"
-read -rsn1 -p "Press any key to exit... "; echo
-}
-#R Memory (RAM) data
-inxiram () {
-clear
-echo -e "Option <R>: RAM data"
-echo -e "\n"
-inxi -c 7 --memory
-echo -e "\n"
-read -rsn1 -p "Press any key to exit... "; echo
-}
-#6 full disk information
-inxidisk () {
-clear
-echo -e "\e[1;15mOption 6: Full disk information\e[0m"
-echo -e "\n"
-inxi -c 7 --disk-full
-echo -e "\n"
-read -rsn1 -p "Press any key to exit... "; echo
-}
-#7 partition + uuids
-inxiuuid () {
-clear
-echo -e "\e[1;15mOption 7: Partition + UUIDs\e[0m"
-echo -e "\n"
-inxi -c 7 -u -pu
-echo -e "\n"
-read -rsn1 -p "Press any key to exit... "; echo
-}
-#8 machine data
-inximach () {
-clear
-echo -e "\e[1;15mOption 8: Machine data\e[0m"
-echo -e "\n"
-inxi -c 7 --machine
-echo -e "\n"
-read -rsn1 -p "Press any key to exit... "; echo
-}
-#9 Advanced Network device info
-inxinet () {
-clear
-echo -e "\e[1;15mOption 9: Network device information\e[0m"
-echo -e "\n"
-inxi -c 7 --network-advanced
-echo -e "\n"
-read -rsn1 -p "Press any key to exit... "; echo
+xterm -bg gray12 -fg snow -T Battery -geometry 85x42+200+100 -e 'tput civis; echo -e "\e[1;15mOption 3: Processes\e[0m"; echo -e "\n"; inxi -c 7 -t cm10 -pu; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo'
 }
 #4 Graphics info
 inxigraph () {
-clear
-echo -e "\e[1;15mOption 4: Graphics information\e[0m"
-echo -e "\n"
-inxi -c 7 --graphics
-echo -e "\n"
-read -rsn1 -p "Press any key to exit... "; echo
+xterm -bg gray12 -fg snow -T Battery -geometry 85x15+200+300 -e 'tput civis; echo -e "\e[1;15mOption 4: Graphics information\e[0m"; echo -e "\n"; inxi -c 7 --graphics; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo'
+}
+#6 full disk information
+inxidisk () {
+xterm -bg gray12 -fg snow -T Battery -geometry 85x12+200+300 -e 'tput civis; echo -e "\e[1;15mOption 6: Full disk information\e[0m"; echo -e "\n"; inxi -c 7 --disk-full; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo'
+}
+#7 partition + uuids
+inxiuuid () {
+xterm -bg gray12 -fg snow -T Battery -geometry 85x18+200+300 -e 'tput civis; echo -e "\e[1;15mOption 7: Partition + UUIDs\e[0m"; echo -e "\n"; inxi -c 7 -u -pu; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo'
+}
+#8 machine data
+inximach () {
+xterm -bg gray12 -fg snow -T Battery -geometry 85x12+200+300 -e 'tput civis; echo -e "\e[1;15mOption 8: Machine data\e[0m"; echo -e "\n"; inxi -c 7 --machine; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo'
+}
+#9 Advanced Network device info
+inxinet () {
+xterm -bg gray12 -fg snow -T Battery -geometry 85x12+200+300 -e 'tput civis; echo -e "\e[1;15mOption 9: Network device information\e[0m"; echo -e "\n"; inxi -c 7 --network-advanced; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo'
 }
 #5 WAN IP address and local interfaces
 inxiip () {
-clear
-echo -e "\e[1;15mOption 5: WAN IP address and local interfaces\e[0m"
-echo -e "\n"
-inxi -c 7 --ip
-echo -e "\n"
-read -rsn1 -p "Press any key to exit... "; echo
+xterm -bg gray12 -fg snow -T Battery -geometry 85x15+200+300 -e 'tput civis; echo -e "\e[1;15mOption 5: WAN IP address and local interfaces\e[0m"; echo -e "\n"; inxi -c 7 --ip; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo'
 }
 #10 Sysytem sensors
 inxisens () {
@@ -120,16 +57,7 @@ inxi -c 7 --sensors
 echo -e "\n"
 read -rsn1 -p "Press any key to exit... "; echo
 }
-#11 Full partition information
-inxifullpart () {
-clear
-echo -e "\e[1;15mOption: Full partition information\e[0m"
-echo -e "\n"
-inxi -c 7 --partitions-full
-echo -e "\n"
-read -rsn1 -p "Press any key to exit... "; echo
-}
-#12 Battery
+#11 Battery
 inxibatt () {
 clear
 echo -e "\e[1;15mOption: Battery information\e[0m"
@@ -137,6 +65,18 @@ echo -e "\n"
 inxi -c 7 --battery
 echo -e "\n"
 read -rsn1 -p "Press any key to exit... "; echo
+}
+#C CPU information
+inxicpu () {
+xterm -bg gray12 -fg snow -T Battery -geometry 85x12+200+300 -e 'tput civis; echo -e "\e[1;15mOption <C>: CPU Info\e[0m"; echo -e "\n"; inxi -c 7 --cpu; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo'
+}
+#R Memory (RAM) data
+inxiram () {
+xterm -bg gray12 -fg snow -T Battery -geometry 85x12+200+300 -e 'tput civis; echo -e "\e[1;15mOption <R>: RAM data\e[0m"; echo -e "\n"; inxi -c 7 --memory; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo'
+}
+#F Full partition information
+inxifullpart () {
+xterm -bg gray12 -fg snow -T Battery -geometry 85x14+200+300 -e 'tput civis; echo -e "\e[1;15mOption <F>: Full partition information\e[0m"; echo -e "\n"; inxi -c 7 --partitions-full; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo'
 }
 #
 makeyourchoice () { while true

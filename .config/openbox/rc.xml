@@ -203,6 +203,47 @@
         <to>2</to>
       </action>
     </keybind>
+     <!-- Start tint2 bottom -->
+    <keybind key="A-C-3">
+      <action name="Execute">
+        <command>tint2 ~/.config/tint2/tint2rc</command>
+      </action>
+    </keybind>
+    <!-- Set blue tint2 -->
+    <keybind key="A-C-4">
+      <action name="Execute">
+        <command>sh ~/scripts/tint2/changetint.sh blue </command>
+      </action>
+    </keybind>
+    <!-- Set black tint2 -->
+    <keybind key="A-C-5">
+      <action name="Execute">
+        <command>sh ~/scripts/tint2/changetint.sh black </command>
+      </action>
+    </keybind>
+    <!-- Start tint2 left -->
+    <keybind key="A-C-6">
+      <action name="Execute">
+        <command>tint2 ~/.config/tint2/tint2rc-left</command>
+      </action>
+    </keybind>
+    <!-- Start tint2 top -->
+    <keybind key="A-C-7">
+      <action name="Execute">
+        <command>tint2 ~/.config/tint2/tint2rc-top</command>
+      </action>
+    </keybind>
+    <!-- Kill All tint2 -->
+    <keybind key="A-C-0">
+      <action name="Execute">
+        <prompt>Are you sure you want to kill tint2?</prompt>
+        <startupnotify>
+          <enabled>yes</enabled>
+          <name>Kill tint2</name>
+        </startupnotify>
+        <command>killall tint2</command>
+      </action>
+    </keybind>
     <keybind key="A-S-d">
       <action name="ToggleDecorations"/>
     </keybind>
@@ -294,12 +335,6 @@
         <command>killall conky</command>
       </action>
     </keybind>
-    <!-- Run thunar 
-    <keybind key="W-u">
-      <action name="Execute">
-        <command>thunar </command>
-      </action>
-    </keybind> -->
     <!-- Show Sesktop -->
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
@@ -398,26 +433,31 @@
         <command>xterm </command>
       </action>
     </keybind>
+    <!-- Copy fragment -->
     <keybind key="A-C-p">
       <action name="Execute">
         <command>scrot -s ~/Pictures/%Y-%m-%d-%T-screenshot.png</command>
       </action>
     </keybind>
+    <!-- Copy screen -->
     <keybind key="A-C-s">
       <action name="Execute">
         <command>scrot ~/Pictures/%Y-%m-%d-%T-screenshot.png</command>
       </action>
     </keybind>
+    <!-- Copy window -->
     <keybind key="A-C-w">
       <action name="Execute">
         <command>scrot -u ~/Pictures/%Y-%m-%d-%T-screenshot.png</command>
       </action>
     </keybind>
+    <!-- Run command -->
     <keybind key="A-C-r">
       <action name="Execute">
         <command>gmrun</command>
       </action>
     </keybind>
+    <!-- Run Geany -->
     <keybind key="W-g">
       <action name="Execute">
         <command>geany ~/Documents/%F</command>
@@ -463,47 +503,6 @@
     <keybind key="A-C-t">
       <action name="Execute">
         <command>lxtask</command>
-      </action>
-    </keybind>
-    <!-- Start tint2 bottom -->
-    <keybind key="A-S-1">
-      <action name="Execute">
-        <command>tint2 ~/.config/tint2/tint2rc</command>
-      </action>
-    </keybind>
-    <!-- Start tint2 left -->
-    <keybind key="A-S-2">
-      <action name="Execute">
-        <command>tint2 ~/.config/tint2/tint2rc-left</command>
-      </action>
-    </keybind>
-    <!-- Start tint2 top -->
-    <keybind key="A-S-3">
-      <action name="Execute">
-        <command>tint2 ~/.config/tint2/tint2rc-top</command>
-      </action>
-    </keybind>
-    <!-- Set blue tint2 -->
-    <keybind key="A-S-4">
-      <action name="Execute">
-        <command>sh ~/scripts/tint2/changetint.sh blue </command>
-      </action>
-    </keybind>
-    <!-- Set black tint2 -->
-    <keybind key="A-S-5">
-      <action name="Execute">
-        <command>sh ~/scripts/tint2/changetint.sh black </command>
-      </action>
-    </keybind>
-    <!-- Kill All tint2 -->
-    <keybind key="A-S-0">
-      <action name="Execute">
-        <prompt>Are you sure you want to kill tint2?</prompt>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>Kill tint2</name>
-        </startupnotify>
-        <command>killall tint2</command>
       </action>
     </keybind>
     <!-- Run Google Chrome -->

@@ -66,7 +66,7 @@
 			<item label="Info of your choice" icon=".local/share/icons/apps/tuxpuck.svg">
 				<action name="Execute"><execute>xterm -T Sys_Info -geometry 90x28+30+20 -e 'tput civis; sudo ~/scripts/sys_about.sh -f menu' </execute></action>
 			</item>
-			<item label="System Maintenance" icon=".local/share/icons/apps/system-software-update.svg">
+			<item label="System Maintenance" icon=".local/share/icons/apps/preferences-system.svg">
 				<action name="Execute"><execute>xterm -bg gray15 -fg snow -T Maintance -geometry 90x28+30+20 -e sudo sh ~/scripts/wtf.sh </execute></action>
 			</item>
 			<item label="System full update" icon=".local/share/icons/apps/update-manager.svg">
@@ -455,13 +455,13 @@
 				<action name="Execute"><execute>xterm -T Basic_Info -geometry 120x22+320+250 -e 'echo -e "\033[5mBasic system information\033[0m"; echo -e "\n"; sudo inxi -c 7 --basic; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo' </execute></action>
 			</item>
 			<item label="Processes" icon=".local/share/icons/apps/tuxpuck.svg">
-				<action name="Execute"><execute>xterm -T PROCESSES -geometry 130x38+300+100 -e 'echo -e "\033[5mProcesses in progress\033[0m"; echo -e "\n"; sudo inxi -c 7 -t cm10 -pu; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo' </execute></action>
+				<action name="Execute"><execute>xterm -bg black -fg snow -T PROCESSES -geometry 85x42+200+100 -e 'echo -e "\033[5mProcesses in progress\033[0m"; echo -e "\n"; sudo inxi -c 7 -t cm10 -pu; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo' </execute></action>
 			</item>
 			<item label="WAN IP address and local interfaces" icon=".local/share/icons/apps/tuxpuck.svg">
-				<action name="Execute"><execute>xterm -bg black -fg snow -T Network -geometry 90x15+820+544 -e sudo sh ~/scripts/sys_about.sh -f ip </execute></action>
+				<action name="Execute"><execute>xterm -bg black -fg snow -T Network -geometry 90x15+820+544 -e 'tput civis; echo -e "\e[1;15mWAN IP address and local interfaces\e[0m"; echo -e "\n"; inxi -c 7 --ip; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo' </execute></action>
 			</item>
 			<item label="Graphics info" icon=".local/share/icons/apps/tuxpuck.svg">
-				<action name="Execute"><execute>xterm -bg black -fg snow -T Network -geometry 90x15+820+544 -e sudo sh ~/scripts/sys_about.sh -f graph </execute></action>
+				<action name="Execute"><execute>xterm -bg black -fg snow -T Network -geometry 90x15+820+544 -e 'tput civis; echo -e "\e[1;15mFull disk information\e[0m"; echo -e "\n"; inxi -c 7 --disk-full; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo' </execute></action>
 			</item>
 			<item label="Sysytem Sensors" icon=".local/share/icons/apps/tuxpuck.svg">
 				<action name="Execute"><execute>xterm -T Sensors -geometry 60x10+800+610 -e 'sudo clear; echo -e "\033[5mSysytem sensors\033[0m"; echo -e "\n"; inxi -c 7 --sensors; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo' </execute></action>

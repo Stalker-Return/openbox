@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<doublecmd DCVersion="1.0.0 beta" ConfigVersion="12">
+<doublecmd DCVersion="1.0.1 beta" ConfigVersion="12">
   <Toolbars>
     <MainToolbar>
       <Row>
@@ -321,10 +321,10 @@
   </Toolbars>
   <MainWindow>
     <Position Save="True">
-      <Left>133</Left>
-      <Top>61</Top>
-      <Width>1059</Width>
-      <Height>577</Height>
+      <Left>6</Left>
+      <Top>26</Top>
+      <Width>1350</Width>
+      <Height>713</Height>
       <PixelsPerInch>96</PixelsPerInch>
       <Maximized>False</Maximized>
       <Splitter>50</Splitter>

@@ -126,7 +126,7 @@ set $ws5 "5: 🗄️"
 set $ws6 "6: 💻"
 set $ws7 "7: 📝"
 set $ws8 "8: 💽"
-set $ws9 "9: 💬"
+set $ws9 "9: 📥"
 set $ws10 "10: 🛠️"
 
 # switch to workspace
@@ -226,24 +226,27 @@ exec_always sudo mkdir -p /run/media/ed/usb2
 # set the screen resolution 1360x768 (virtual mode)
 # xrandr --output Virtual1 --mode 1360x768 &
 
-# Assign apps to Workspaces
+# Assign apps to Workspaces (use xprop to find out the apps' class)
 for_window [class="XTerm"] move to workspace $ws1
 for_window [class="Double Commander"] move to workspace $ws2
 for_window [class="Pcmanfm"] move to workspace $ws2
 for_window [class="Brave-browser"] move to workspace $ws3
 for_window [class="firefox"] move to workspace $ws3
+for_window [class="Nyxt"] move to workspace $ws3
 for_window [class="Geany"] move to workspace $ws4
 for_window [class="FreeFileSync"] move to workspace $ws5
 for_window [class="KeePassXC"] move to workspace $ws5
 for_window [class="Anydesk"] move to workspace $ws6
 for_window [class="XpdfReader"] move to workspace $ws7
 for_window [class="Master PDF Editor"] move to workspace $ws7
+for_window [class="Thunderbird"] move to workspace $ws9
 for_window [class="ViberPC"] move to workspace $ws9
 for_window [class="TelegramDesktop"] move to workspace $ws9
 for_window [class="Signal"] move to workspace $ws9
 
 # Super Keybindings to run apps:
 bindsym $mod+w exec brave %U
+bindsym $mod+n exec nyxt
 bindsym $mod+d exec doublecmd %F
 bindsym $mod+t exec lxterminal
 bindsym $mod+g exec geany ~/Documents/%F
