@@ -371,7 +371,7 @@ execp_continuous = 0
 execp_markup = 1
 execp_monitor = all
 execp_tooltip = CPU usage
-execp_lclick_command = xterm -bg blue4 -fg snow -T Sys_MEM -geometry 90x7+550+648 -e 'tput civis; echo -ne "\033[5mSysytem Memory\033[0m"; echo -ne "\n"; sudo inxi -c 7 --cpu; echo -ne "\n"; read -rsn1 -p "Press any key to exit... "'
+execp_lclick_command = xterm -bg black -fg blue -T CPU -geometry 90x6+600+661 -e 'tput civis; echo -e "\e[1;15mOption <C>: CPU Info\e[0m"; inxi -c 7 --cpu; read -rsn1 -p "Press any key to exit... "; echo'
 execp_rclick_command = xterm -bg blue -fg snow -T Mem_Usage -geometry 35x15+720+544 -e 'tput civis; echo -e "\033[5mThe biggest 10 CPU hogs\033[0m"; echo -ne "\n"; ps axch -o cmd,%cpu --sort=-%cpu | head -10; echo -ne "\n"; read -rsn1 -p "Press any key to exit... "'
 execp_mclick_command = 
 execp_uwheel_command = 
@@ -395,7 +395,7 @@ execp_continuous = 0
 execp_markup = 1
 execp_monitor = all
 execp_tooltip = RAM usage
-execp_lclick_command = xterm -bg blue4 -fg snow -T Sys_MEM -geometry 60x8+700+635 -e 'tput civis; echo -ne "\033[5mSysytem Memory\033[0m"; echo -ne "\n"; sudo inxi -c 7 --memory; echo -ne "\n"; read -rsn1 -p "Press any key to exit... "'
+execp_lclick_command = xterm -bg black -fg blue -T RAM -geometry 70x7+720+648 -e 'tput civis; echo -e "\e[1;15mOption <R>: RAM data\e[0m"; inxi -c 7 --memory; read -rsn1 -p "Press any key to exit... "; echo'
 execp_rclick_command = xterm -bg blue -fg snow -T Mem_Usage -geometry 35x15+780+544 -e 'tput civis; echo -e "\033[5mThe biggest 10 MEM hogs\033[0m"; echo -ne "\n"; ps axch -o cmd,%mem --sort=-%mem | head -10; echo -ne "\n"; read -rsn1 -p "Press any key to exit... "'
 execp_mclick_command = 
 execp_uwheel_command = 
@@ -419,7 +419,7 @@ execp_continuous = 0
 execp_markup = 1
 execp_monitor = all
 execp_tooltip = CPU (t)emperature
-execp_lclick_command = xterm -bg blue4 -fg snow -T Sys_MEM -geometry 60x9+700+622 -e 'tput civis; echo -ne "\033[5mSysytem Memory\033[0m"; echo -ne "\n"; sudo inxi -c 7 --memory; echo -ne "\n"; read -rsn1 -p "Press any key to exit... "'
+execp_lclick_command = xterm -bg black -fg blue -T Sensors -geometry 60x6+800+661 -e 'tput civis; echo -e "\e[1;15mSysytem sensors\e[0m"; inxi -c 7 --sensors; read -rsn1 -p "Press any key to exit... "; echo'
 execp_rclick_command = psensor
 execp_mclick_command = 
 execp_uwheel_command = 
@@ -484,7 +484,7 @@ execp_icon_h = 0
 # Executor 6
 execp = new
 execp_command = CHARGE=$(cat /sys/class/power_supply/BAT1/capacity); STATUS=$(cat /sys/class/power_supply/BAT1/status); case $STATUS in "Charging" | "Unknown" | "Full" ) BATICON="\U0001F50C" ;; "Discharging") if [ "$CHARGE" -eq 0 ]; then BATICON="🔋"; elif [ "$CHARGE" -gt 0 ] && [ "$CHARGE" -le 30 ]; then BATICON="🔋"; elif [ "$CHARGE" -gt 30 ] && [ "$CHARGE" -le 60 ]; then BATICON="🔋"; elif [ "$CHARGE" -gt 60 ] && [ "$CHARGE" -le 90 ]; then BATICON="🔋"; else BATICON="🔋"; fi;; *) BATICON="N/A";; esac; echo -e "$BATICON $CHARGE%"
-execp_interval = 30
+execp_interval = 60
 execp_has_icon = 0
 execp_cache_icon = 0
 execp_continuous = 0
@@ -492,7 +492,7 @@ execp_markup = 1
 execp_monitor = all
 execp_tooltip = Battery: L-click to see battery info / R-click power manager
 execp_lclick_command = xterm -bg blue4 -fg snow -T Battery -geometry 40x14+980+557 -e 'tput civis; sh ~/scripts/tint2/bar_batt.sh -f info'
-execp_rclick_command = xfce4-power-manager -c
+execp_rclick_command =  xterm -bg black -fg blue -T Battery -geometry 72x5+929+674 -e 'tput civis; echo -e "\e[1;15mBattery information\e[0m"; inxi -c 7 --battery; read -rsn1 -p "Press any key to exit... "; echo'
 execp_mclick_command = 
 execp_uwheel_command = 
 execp_dwheel_command = 

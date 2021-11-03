@@ -925,7 +925,7 @@
     <manageDesktops>no</manageDesktops>
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
-  <!-- Apps configurations -->
+  <!-- APPS CONFIGURATION -->
   <applications>
     <!-- match all windows, and remove their decorations -->
     <application class="*">
@@ -971,6 +971,12 @@
       <position force="yes"><x>2</x>		# edit: <x>-2</x>
              <y>2</y>						# edit: <y>-2</y>
 			</position>
+      <maximized>false</maximized>
+      <layer>normal</layer>
+    </application>
+    <!-- set thunderbird window  -->
+    <application name="thunderbird">
+      <decor>yes</decor>
       <maximized>false</maximized>
       <layer>normal</layer>
     </application>

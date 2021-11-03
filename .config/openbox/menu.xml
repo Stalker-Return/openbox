@@ -461,7 +461,7 @@
 				<action name="Execute"><execute>xterm -bg black -fg snow -T Network -geometry 90x15+820+544 -e 'tput civis; echo -e "\e[1;15mWAN IP address and local interfaces\e[0m"; echo -e "\n"; inxi -c 7 --ip; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo' </execute></action>
 			</item>
 			<item label="Graphics info" icon=".local/share/icons/apps/tuxpuck.svg">
-				<action name="Execute"><execute>xterm -bg black -fg snow -T Network -geometry 90x15+820+544 -e 'tput civis; echo -e "\e[1;15mFull disk information\e[0m"; echo -e "\n"; inxi -c 7 --disk-full; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo' </execute></action>
+				<action name="Execute"><execute>sudo ~/scripts/sys_about.sh -f graph </execute></action>
 			</item>
 			<item label="Sysytem Sensors" icon=".local/share/icons/apps/tuxpuck.svg">
 				<action name="Execute"><execute>xterm -T Sensors -geometry 60x10+800+610 -e 'sudo clear; echo -e "\033[5mSysytem sensors\033[0m"; echo -e "\n"; inxi -c 7 --sensors; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo' </execute></action>

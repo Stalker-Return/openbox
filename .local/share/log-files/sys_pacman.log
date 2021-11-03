@@ -276,3 +276,12 @@
 [2021-11-02T08:46:05+0300] [ALPM] running 'update-mime-database.hook'...
 [2021-11-03T00:00:21+0300] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
 [2021-11-03T00:00:21+0300] [PACMAN] synchronizing package lists
+[2021-11-03T00:00:26+0300] [PACMAN] starting full system upgrade
+[2021-11-03T00:00:51+0300] [ALPM] transaction started
+[2021-11-03T00:00:51+0300] [ALPM] upgraded gc (8.0.4-4 -> 8.2.0-1)
+[2021-11-03T00:00:52+0300] [ALPM] upgraded iproute2 (5.14.0-1 -> 5.15.0-1)
+[2021-11-03T00:00:53+0300] [ALPM] upgraded perf (5.14-1 -> 5.15-1)
+[2021-11-03T00:00:55+0300] [ALPM] transaction completed
+[2021-11-03T00:00:55+0300] [ALPM] running '30-systemd-update.hook'...
+[2021-11-04T00:00:52+0300] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2021-11-04T00:00:52+0300] [PACMAN] synchronizing package lists
