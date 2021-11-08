@@ -3,11 +3,11 @@
 
 Global {
   edge=bottom
-  align=left
+  align=center
   margin=0
   widthtype=percent
   width=100
-  height=24
+  height=26
   transparent=1
   tintcolor=#000000
   alpha=255

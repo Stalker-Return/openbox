@@ -356,3 +356,6 @@
 [2021-11-07T01:40:29+0300] [PACMAN] synchronizing package lists
 [2021-11-07T14:44:39+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
 [2021-11-07T14:44:39+0100] [PACMAN] synchronizing package lists
+[2021-11-07T14:44:45+0100] [PACMAN] starting full system upgrade
+[2021-11-08T12:19:09+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2021-11-08T12:19:10+0100] [PACMAN] synchronizing package lists
