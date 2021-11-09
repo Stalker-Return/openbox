@@ -321,10 +321,10 @@
   </Toolbars>
   <MainWindow>
     <Position Save="True">
-      <Left>6</Left>
-      <Top>26</Top>
-      <Width>1350</Width>
-      <Height>713</Height>
+      <Left>148</Left>
+      <Top>49</Top>
+      <Width>1062</Width>
+      <Height>594</Height>
       <PixelsPerInch>96</PixelsPerInch>
       <Maximized>False</Maximized>
       <Splitter>50</Splitter>
@@ -463,7 +463,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/Clouds/gDrive/Photos/Katerina 2021/</Path>
+                  <Path>/home/ed/.local/share/log-files/</Path>
                 </Paths>
               </Entry>
             </History>

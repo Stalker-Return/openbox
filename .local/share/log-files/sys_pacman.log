@@ -359,3 +359,49 @@
 [2021-11-07T14:44:45+0100] [PACMAN] starting full system upgrade
 [2021-11-08T12:19:09+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
 [2021-11-08T12:19:10+0100] [PACMAN] synchronizing package lists
+[2021-11-08T12:22:31+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2021-11-08T12:22:31+0100] [PACMAN] synchronizing package lists
+[2021-11-08T12:22:35+0100] [PACMAN] starting full system upgrade
+[2021-11-08T12:22:38+0100] [ALPM] transaction started
+[2021-11-08T12:22:38+0100] [ALPM] upgraded btrfs-progs (5.14.2-1 -> 5.15-1)
+[2021-11-08T12:22:38+0100] [ALPM] upgraded pasystray (0.7.1-2 -> 0.8.0-1)
+[2021-11-08T12:22:39+0100] [ALPM] transaction completed
+[2021-11-08T12:22:39+0100] [ALPM] running '30-systemd-daemon-reload.hook'...
+[2021-11-08T12:22:40+0100] [ALPM] running '30-systemd-udev-reload.hook'...
+[2021-11-08T12:22:40+0100] [ALPM] running '30-systemd-update.hook'...
+[2021-11-08T12:22:40+0100] [ALPM] running '90-mkinitcpio-install.hook'...
+[2021-11-08T12:22:40+0100] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+[2021-11-08T12:22:40+0100] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux.img
+[2021-11-08T12:22:40+0100] [ALPM-SCRIPTLET] ==> Starting build: 5.14.16-arch1-1
+[2021-11-08T12:22:41+0100] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2021-11-08T12:22:42+0100] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2021-11-08T12:22:43+0100] [ALPM-SCRIPTLET]   -> Running build hook: [autodetect]
+[2021-11-08T12:22:43+0100] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2021-11-08T12:22:43+0100] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2021-11-08T12:22:51+0100] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2021-11-08T12:22:52+0100] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2021-11-08T12:22:53+0100] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2021-11-08T12:22:53+0100] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2021-11-08T12:22:53+0100] [ALPM-SCRIPTLET] ==> Creating zstd-compressed initcpio image: /boot/initramfs-linux.img
+[2021-11-08T12:22:55+0100] [ALPM-SCRIPTLET] ==> Image generation successful
+[2021-11-08T12:22:55+0100] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'fallback'
+[2021-11-08T12:22:55+0100] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux-fallback.img -S autodetect
+[2021-11-08T12:22:55+0100] [ALPM-SCRIPTLET] ==> Starting build: 5.14.16-arch1-1
+[2021-11-08T12:22:55+0100] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2021-11-08T12:22:56+0100] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2021-11-08T12:22:57+0100] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2021-11-08T12:22:57+0100] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2021-11-08T12:23:02+0100] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: aic94xx
+[2021-11-08T12:23:02+0100] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: wd719x
+[2021-11-08T12:23:05+0100] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: xhci_pci
+[2021-11-08T12:23:08+0100] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2021-11-08T12:23:13+0100] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2021-11-08T12:23:17+0100] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2021-11-08T12:23:18+0100] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2021-11-08T12:23:19+0100] [ALPM-SCRIPTLET] ==> Creating zstd-compressed initcpio image: /boot/initramfs-linux-fallback.img
+[2021-11-08T12:23:22+0100] [ALPM-SCRIPTLET] ==> Image generation successful
+[2021-11-08T12:23:22+0100] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2021-11-08T12:23:22+0100] [ALPM] running 'update-desktop-database.hook'...
+[2021-11-09T06:08:38+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2021-11-09T06:08:38+0100] [PACMAN] synchronizing package lists
+[2021-11-09T06:08:42+0100] [PACMAN] starting full system upgrade

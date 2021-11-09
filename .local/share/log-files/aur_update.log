@@ -5,3 +5,5 @@ Exit code = 1 | Catchall for general errors | Mon Oct 25 08:13:02 AM MSK 2021 | 
 Exit code = 0 | Success | Sat Oct 30 06:21:48 AM MSK 2021 | AUR packages update has completed.
 Exit code = 0 | Success | Sat Oct 30 06:49:16 PM MSK 2021 | AUR packages update has completed.
 Exit code = 0 | Success | Mon Nov  1 06:26:27 AM MSK 2021 | AUR packages update has completed.
+Exit code = 1 | Catchall for general errors | Mon Nov  8 12:19:32 PM CET 2021 | AUR packages update has completed.
+Exit code = 0 | Success | Mon Nov  8 12:29:23 PM CET 2021 | AUR packages update has completed.
